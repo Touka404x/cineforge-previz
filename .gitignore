@@ -1,0 +1,29 @@
+# Godot generated state
+.godot/
+.import/
+.autoconverted/
+
+# Local export configuration and credentials
+export.cfg
+export_credentials.cfg
+
+# Local binaries and release artifacts
+*.exe
+*.dll
+*.pck
+*.zip
+*.7z
+*.tar
+*.gz
+bin/
+
+# User output and editor files
+source/dist/
+*.tmp
+*.log
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

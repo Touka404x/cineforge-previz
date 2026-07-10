@@ -1,0 +1,4661 @@
+{
+ "categories": [
+  {
+   "cn": "载具",
+   "key": "vehicle",
+   "scale": 1.725
+  },
+  {
+   "cn": "建筑·商业",
+   "key": "building",
+   "scale": 7.458
+  },
+  {
+   "cn": "建筑·住宅",
+   "key": "house",
+   "scale": 7.458
+  },
+  {
+   "cn": "道路",
+   "key": "road",
+   "scale": 7.458
+  },
+  {
+   "cn": "中世纪",
+   "key": "medieval",
+   "scale": 3.96
+  },
+  {
+   "cn": "家具",
+   "key": "furniture",
+   "scale": 2.125
+  },
+  {
+   "cn": "自然",
+   "key": "nature",
+   "scale": 4.348
+  }
+ ],
+ "models": [
+  {
+   "aabb": [
+    1.5,
+    1.80000007152557,
+    3.24999976158142
+   ],
+   "cat": "vehicle",
+   "cn": "救护车",
+   "file": "res://models/vehicle/ambulance.glb",
+   "id": "vehicle/ambulance",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.5,
+    1.34999990463257,
+    3.24999976158142
+   ],
+   "cat": "vehicle",
+   "cn": "厢式货车平板",
+   "file": "res://models/vehicle/delivery-flat.glb",
+   "id": "vehicle/delivery-flat",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.5,
+    1.64999985694885,
+    3.24999976158142
+   ],
+   "cat": "vehicle",
+   "cn": "厢式货车",
+   "file": "res://models/vehicle/delivery.glb",
+   "id": "vehicle/delivery",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.5,
+    1.70000004768372,
+    3.39999985694885
+   ],
+   "cat": "vehicle",
+   "cn": "消防车",
+   "file": "res://models/vehicle/firetruck.glb",
+   "id": "vehicle/firetruck",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.60000002384186,
+    1.60000002384186,
+    3.44999980926514
+   ],
+   "cat": "vehicle",
+   "cn": "垃圾卡车",
+   "file": "res://models/vehicle/garbage-truck.glb",
+   "id": "vehicle/garbage-truck",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.29999995231628,
+    1.10000002384186,
+    2.85000014305115
+   ],
+   "cat": "vehicle",
+   "cn": "两厢车运动版",
+   "file": "res://models/vehicle/hatchback-sports.glb",
+   "id": "vehicle/hatchback-sports",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.5,
+    1.30000007152557,
+    3.09999966621399
+   ],
+   "cat": "vehicle",
+   "cn": "警车",
+   "file": "res://models/vehicle/police.glb",
+   "id": "vehicle/police",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.20000004768372,
+    0.832544267177582,
+    2.65977239608765
+   ],
+   "cat": "vehicle",
+   "cn": "赛车未来",
+   "file": "res://models/vehicle/race-future.glb",
+   "id": "vehicle/race-future",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.29999995231628,
+    0.732544302940369,
+    2.55977249145508
+   ],
+   "cat": "vehicle",
+   "cn": "赛车",
+   "file": "res://models/vehicle/race.glb",
+   "id": "vehicle/race",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.29999995231628,
+    1.09999990463257,
+    2.54999995231628
+   ],
+   "cat": "vehicle",
+   "cn": "轿车运动版",
+   "file": "res://models/vehicle/sedan-sports.glb",
+   "id": "vehicle/sedan-sports",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.5,
+    1.29999995231628,
+    2.54999995231628
+   ],
+   "cat": "vehicle",
+   "cn": "轿车",
+   "file": "res://models/vehicle/sedan.glb",
+   "id": "vehicle/sedan",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.5,
+    1.29999995231628,
+    2.85000014305115
+   ],
+   "cat": "vehicle",
+   "cn": "SUV豪华",
+   "file": "res://models/vehicle/suv-luxury.glb",
+   "id": "vehicle/suv-luxury",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.5,
+    1.30000007152557,
+    2.69999980926514
+   ],
+   "cat": "vehicle",
+   "cn": "SUV",
+   "file": "res://models/vehicle/suv.glb",
+   "id": "vehicle/suv",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.5,
+    1.49999988079071,
+    2.74999976158142
+   ],
+   "cat": "vehicle",
+   "cn": "出租车",
+   "file": "res://models/vehicle/taxi.glb",
+   "id": "vehicle/taxi",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.34207725524902,
+    1.70205318927765,
+    2.30155277252197
+   ],
+   "cat": "vehicle",
+   "cn": "拖拉机警车",
+   "file": "res://models/vehicle/tractor-police.glb",
+   "id": "vehicle/tractor-police",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.66056001186371,
+    1.51202499866486,
+    2.47006177902222
+   ],
+   "cat": "vehicle",
+   "cn": "拖拉机铲斗",
+   "file": "res://models/vehicle/tractor-shovel.glb",
+   "id": "vehicle/tractor-shovel",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.34207701683044,
+    1.60205316543579,
+    2.20155262947083
+   ],
+   "cat": "vehicle",
+   "cn": "拖拉机",
+   "file": "res://models/vehicle/tractor.glb",
+   "id": "vehicle/tractor",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.5,
+    1.29999995231628,
+    2.74511432647705
+   ],
+   "cat": "vehicle",
+   "cn": "卡车平板",
+   "file": "res://models/vehicle/truck-flat.glb",
+   "id": "vehicle/truck-flat",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.5,
+    1.29999995231628,
+    2.94999957084656
+   ],
+   "cat": "vehicle",
+   "cn": "卡车",
+   "file": "res://models/vehicle/truck.glb",
+   "id": "vehicle/truck",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.5,
+    1.35000002384186,
+    2.75000023841858
+   ],
+   "cat": "vehicle",
+   "cn": "面包车",
+   "file": "res://models/vehicle/van.glb",
+   "id": "vehicle/van",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.883587896823883,
+    1.29299998283386,
+    0.939999997615814
+   ],
+   "cat": "building",
+   "cn": "楼房 A",
+   "file": "res://models/building/building-a.glb",
+   "id": "building/building-a",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.970000088214874,
+    1.29299998283386,
+    0.939999997615814
+   ],
+   "cat": "building",
+   "cn": "楼房 B",
+   "file": "res://models/building/building-b.glb",
+   "id": "building/building-b",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.883587896823883,
+    0.89300000667572,
+    1.09000015258789
+   ],
+   "cat": "building",
+   "cn": "楼房 C",
+   "file": "res://models/building/building-c.glb",
+   "id": "building/building-c",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.840000033378601,
+    1.29299998283386,
+    0.899999856948853
+   ],
+   "cat": "building",
+   "cn": "楼房 D",
+   "file": "res://models/building/building-d.glb",
+   "id": "building/building-d",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.64000010490417,
+    0.89300000667572,
+    1.00789153575897
+   ],
+   "cat": "building",
+   "cn": "楼房 E",
+   "file": "res://models/building/building-e.glb",
+   "id": "building/building-e",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.840000033378601,
+    1.69300007820129,
+    1.03000020980835
+   ],
+   "cat": "building",
+   "cn": "楼房 F",
+   "file": "res://models/building/building-f.glb",
+   "id": "building/building-f",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.970000028610229,
+    1.69300007820129,
+    0.922000169754028
+   ],
+   "cat": "building",
+   "cn": "楼房 G",
+   "file": "res://models/building/building-g.glb",
+   "id": "building/building-g",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.883587837219238,
+    1.29299998283386,
+    1.0078911781311
+   ],
+   "cat": "building",
+   "cn": "楼房 H",
+   "file": "res://models/building/building-h.glb",
+   "id": "building/building-h",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.24000000953674,
+    1.6800000667572,
+    1.30200004577637
+   ],
+   "cat": "building",
+   "cn": "楼房 i",
+   "file": "res://models/building/building-i.glb",
+   "id": "building/building-i",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    2.08358812332153,
+    1.69300007820129,
+    1.3400000333786
+   ],
+   "cat": "building",
+   "cn": "楼房 j",
+   "file": "res://models/building/building-j.glb",
+   "id": "building/building-j",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    2.08358812332153,
+    1.47000002861023,
+    0.941999793052673
+   ],
+   "cat": "building",
+   "cn": "楼房 k",
+   "file": "res://models/building/building-k.glb",
+   "id": "building/building-k",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.37000000476837,
+    2.26999998092651,
+    1.40199995040894
+   ],
+   "cat": "building",
+   "cn": "楼房 l",
+   "file": "res://models/building/building-l.glb",
+   "id": "building/building-l",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.24000012874603,
+    3.15000009536743,
+    1.24200010299683
+   ],
+   "cat": "building",
+   "cn": "楼房 m",
+   "file": "res://models/building/building-m.glb",
+   "id": "building/building-m",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    2.32000017166138,
+    2.48000001907349,
+    1.82000005245209
+   ],
+   "cat": "building",
+   "cn": "楼房 n",
+   "file": "res://models/building/building-n.glb",
+   "id": "building/building-n",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.35999977588654,
+    2.87999987602234,
+    1.3600001335144
+   ],
+   "cat": "building",
+   "cn": "楼房摩天楼 A",
+   "file": "res://models/building/building-skyscraper-a.glb",
+   "id": "building/building-skyscraper-a",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.35999977588654,
+    4.48000001907349,
+    1.35999989509583
+   ],
+   "cat": "building",
+   "cn": "楼房摩天楼 B",
+   "file": "res://models/building/building-skyscraper-b.glb",
+   "id": "building/building-skyscraper-b",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.27999973297119,
+    4.07999992370605,
+    1.38789129257202
+   ],
+   "cat": "building",
+   "cn": "楼房摩天楼 C",
+   "file": "res://models/building/building-skyscraper-c.glb",
+   "id": "building/building-skyscraper-c",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.27999973297119,
+    5.46999931335449,
+    1.38789129257202
+   ],
+   "cat": "building",
+   "cn": "楼房摩天楼 D",
+   "file": "res://models/building/building-skyscraper-d.glb",
+   "id": "building/building-skyscraper-d",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.29499983787537,
+    4.07999992370605,
+    1.24200022220612
+   ],
+   "cat": "building",
+   "cn": "楼房摩天楼 E",
+   "file": "res://models/building/building-skyscraper-e.glb",
+   "id": "building/building-skyscraper-e",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.29999995231628,
+    0.833540976047516,
+    1.0281378030777
+   ],
+   "cat": "house",
+   "cn": "楼房型 A",
+   "file": "res://models/house/building-type-a.glb",
+   "id": "house/building-type-a",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.82800006866455,
+    1.13750004768372,
+    1.13999998569489
+   ],
+   "cat": "house",
+   "cn": "楼房型 B",
+   "file": "res://models/house/building-type-b.glb",
+   "id": "house/building-type-b",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.28638029098511,
+    1.03354096412659,
+    1.0281378030777
+   ],
+   "cat": "house",
+   "cn": "楼房型 C",
+   "file": "res://models/house/building-type-c.glb",
+   "id": "house/building-type-c",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.75638031959534,
+    1.23750007152557,
+    1.02799999713898
+   ],
+   "cat": "house",
+   "cn": "楼房型 D",
+   "file": "res://models/house/building-type-d.glb",
+   "id": "house/building-type-d",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.29999995231628,
+    1.13750004768372,
+    1.02799999713898
+   ],
+   "cat": "house",
+   "cn": "楼房型 E",
+   "file": "res://models/house/building-type-e.glb",
+   "id": "house/building-type-e",
+   "min_y": 0.000000000000000270716785670378
+  },
+  {
+   "aabb": [
+    1.42799997329712,
+    1.13750004768372,
+    1.40589118003845
+   ],
+   "cat": "house",
+   "cn": "楼房型 F",
+   "file": "res://models/house/building-type-f.glb",
+   "id": "house/building-type-f",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.45000004768372,
+    0.76820969581604,
+    1.17799997329712
+   ],
+   "cat": "house",
+   "cn": "楼房型 G",
+   "file": "res://models/house/building-type-g.glb",
+   "id": "house/building-type-g",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.29999995231628,
+    0.737499952316284,
+    0.916000008583069
+   ],
+   "cat": "house",
+   "cn": "楼房型 H",
+   "file": "res://models/house/building-type-h.glb",
+   "id": "house/building-type-h",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.28638029098511,
+    0.737499952316284,
+    1.02799999713898
+   ],
+   "cat": "house",
+   "cn": "楼房型 i",
+   "file": "res://models/house/building-type-i.glb",
+   "id": "house/building-type-i",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.37000000476837,
+    1.03750002384186,
+    0.916000008583069
+   ],
+   "cat": "house",
+   "cn": "楼房型 j",
+   "file": "res://models/house/building-type-j.glb",
+   "id": "house/building-type-j",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.920938014984131,
+    1.14959621429443,
+    1.01999998092651
+   ],
+   "cat": "house",
+   "cn": "楼房型 k",
+   "file": "res://models/house/building-type-k.glb",
+   "id": "house/building-type-k",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.03358793258667,
+    1.04919338226318,
+    1.01999998092651
+   ],
+   "cat": "house",
+   "cn": "楼房型 l",
+   "file": "res://models/house/building-type-l.glb",
+   "id": "house/building-type-l",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.42800009250641,
+    0.737499952316284,
+    1.42799997329712
+   ],
+   "cat": "house",
+   "cn": "楼房型 m",
+   "file": "res://models/house/building-type-m.glb",
+   "id": "house/building-type-m",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.78427147865295,
+    1.13750004768372,
+    1.37789118289948
+   ],
+   "cat": "house",
+   "cn": "楼房型 n",
+   "file": "res://models/house/building-type-n.glb",
+   "id": "house/building-type-n",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.26999998092651,
+    1.13750004768372,
+    1.02799999713898
+   ],
+   "cat": "house",
+   "cn": "楼房型 o",
+   "file": "res://models/house/building-type-o.glb",
+   "id": "house/building-type-o",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.24000012874603,
+    0.917999982833862,
+    0.990000069141388
+   ],
+   "cat": "house",
+   "cn": "楼房型 p",
+   "file": "res://models/house/building-type-p.glb",
+   "id": "house/building-type-p",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.24000000953674,
+    0.917999982833862,
+    0.885587930679321
+   ],
+   "cat": "house",
+   "cn": "楼房型 q",
+   "file": "res://models/house/building-type-q.glb",
+   "id": "house/building-type-q",
+   "min_y": -0.00000000000000000088231550910214
+  },
+  {
+   "aabb": [
+    1.02800011634827,
+    1.14114284515381,
+    1.01999998092651
+   ],
+   "cat": "house",
+   "cn": "楼房型 r",
+   "file": "res://models/house/building-type-r.glb",
+   "id": "house/building-type-r",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.40602898597717,
+    1.13750004768372,
+    1.08638048171997
+   ],
+   "cat": "house",
+   "cn": "楼房型 s",
+   "file": "res://models/house/building-type-s.glb",
+   "id": "house/building-type-s",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.31358790397644,
+    1.15633058547974,
+    1.40638029575348
+   ],
+   "cat": "house",
+   "cn": "楼房型 t",
+   "file": "res://models/house/building-type-t.glb",
+   "id": "house/building-type-t",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.4280002117157,
+    1.13750004768372,
+    1.08693504333496
+   ],
+   "cat": "house",
+   "cn": "楼房型 u",
+   "file": "res://models/house/building-type-u.glb",
+   "id": "house/building-type-u",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.359999984502792,
+    0.00999999977648258,
+    0.400000005960464
+   ],
+   "cat": "house",
+   "cn": "车道 long",
+   "file": "res://models/house/driveway-long.glb",
+   "id": "house/driveway-long",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.359999984502792,
+    0.00999999977648258,
+    0.200000002980232
+   ],
+   "cat": "house",
+   "cn": "车道矮",
+   "file": "res://models/house/driveway-short.glb",
+   "id": "house/driveway-short",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.875,
+    0.269999980926514,
+    0.4375
+   ],
+   "cat": "house",
+   "cn": "栅栏 1x2",
+   "file": "res://models/house/fence-1x2.glb",
+   "id": "house/fence-1x2",
+   "min_y": -0.0000000000000325311338197215
+  },
+  {
+   "aabb": [
+    1.27500009536743,
+    0.269999980926514,
+    0.4375
+   ],
+   "cat": "house",
+   "cn": "栅栏 1x3",
+   "file": "res://models/house/fence-1x3.glb",
+   "id": "house/fence-1x3",
+   "min_y": -0.0000000000000325311338197215
+  },
+  {
+   "aabb": [
+    1.67500007152557,
+    0.269999980926514,
+    0.4375
+   ],
+   "cat": "house",
+   "cn": "栅栏 1x4",
+   "file": "res://models/house/fence-1x4.glb",
+   "id": "house/fence-1x4",
+   "min_y": -0.0000000000000325311338197215
+  },
+  {
+   "aabb": [
+    0.875,
+    0.269999980926514,
+    0.837499976158142
+   ],
+   "cat": "house",
+   "cn": "栅栏 2x2",
+   "file": "res://models/house/fence-2x2.glb",
+   "id": "house/fence-2x2",
+   "min_y": -0.0000000000000325311338197215
+  },
+  {
+   "aabb": [
+    1.27500009536743,
+    0.269999980926514,
+    0.837499976158142
+   ],
+   "cat": "house",
+   "cn": "栅栏 2x3",
+   "file": "res://models/house/fence-2x3.glb",
+   "id": "house/fence-2x3",
+   "min_y": -0.0000000000000325311338197215
+  },
+  {
+   "aabb": [
+    0.875,
+    0.269999980926514,
+    1.23750007152557
+   ],
+   "cat": "house",
+   "cn": "栅栏 3x2",
+   "file": "res://models/house/fence-3x2.glb",
+   "id": "house/fence-3x2",
+   "min_y": -0.0000000000000325311168790626
+  },
+  {
+   "aabb": [
+    1.27500009536743,
+    0.269999980926514,
+    1.23750007152557
+   ],
+   "cat": "house",
+   "cn": "栅栏 3x3",
+   "file": "res://models/house/fence-3x3.glb",
+   "id": "house/fence-3x3",
+   "min_y": -0.0000000000000325311338197215
+  },
+  {
+   "aabb": [
+    1.27500009536743,
+    0.170000001788139,
+    0.837499976158142
+   ],
+   "cat": "house",
+   "cn": "栅栏矮",
+   "file": "res://models/house/fence-low.glb",
+   "id": "house/fence-low",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.475000023841858,
+    0.269999980926514,
+    0.0750000029802322
+   ],
+   "cat": "house",
+   "cn": "栅栏",
+   "file": "res://models/house/fence.glb",
+   "id": "house/fence",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.200000002980232,
+    0.00999999977648258,
+    0.400000005960464
+   ],
+   "cat": "house",
+   "cn": "小径 long",
+   "file": "res://models/house/path-long.glb",
+   "id": "house/path-long",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.200000002980232,
+    0.00999999977648258,
+    0.200000002980232
+   ],
+   "cat": "house",
+   "cn": "小径矮",
+   "file": "res://models/house/path-short.glb",
+   "id": "house/path-short",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.140000000596046,
+    0.00999999977648258,
+    0.400000005960464
+   ],
+   "cat": "house",
+   "cn": "小径石块 long",
+   "file": "res://models/house/path-stones-long.glb",
+   "id": "house/path-stones-long",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.155624121427536,
+    0.00999999977648258,
+    0.361350446939468
+   ],
+   "cat": "house",
+   "cn": "小径石块 messy",
+   "file": "res://models/house/path-stones-messy.glb",
+   "id": "house/path-stones-messy",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.140000000596046,
+    0.00999999977648258,
+    0.200000002980232
+   ],
+   "cat": "house",
+   "cn": "小径石块矮",
+   "file": "res://models/house/path-stones-short.glb",
+   "id": "house/path-stones-short",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.400000005960464,
+    0.17710953950882,
+    0.300000011920929
+   ],
+   "cat": "house",
+   "cn": "planter",
+   "file": "res://models/house/planter.glb",
+   "id": "house/planter",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.210444182157516,
+    0.766999959945679,
+    0.242999985814095
+   ],
+   "cat": "house",
+   "cn": "树大",
+   "file": "res://models/house/tree-large.glb",
+   "id": "house/tree-large",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.210444182157516,
+    0.567000031471252,
+    0.242999985814095
+   ],
+   "cat": "house",
+   "cn": "树小",
+   "file": "res://models/house/tree-small.glb",
+   "id": "house/tree-small",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.140000000596046,
+    0.5,
+    0.140000000596046
+   ],
+   "cat": "road",
+   "cn": "桥 pillar宽",
+   "file": "res://models/road/bridge-pillar-wide.glb",
+   "id": "road/bridge-pillar-wide",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.100000001490116,
+    0.5,
+    0.100000001490116
+   ],
+   "cat": "road",
+   "cn": "桥 pillar",
+   "file": "res://models/road/bridge-pillar.glb",
+   "id": "road/bridge-pillar",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.0199999995529652,
+    1.0
+   ],
+   "cat": "road",
+   "cn": "道路弯道 sidewalk",
+   "file": "res://models/road/road-bend-sidewalk.glb",
+   "id": "road/road-bend-sidewalk",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.0199999995529652,
+    1.0
+   ],
+   "cat": "road",
+   "cn": "道路弯道广场",
+   "file": "res://models/road/road-bend-square.glb",
+   "id": "road/road-bend-square",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.0199999995529652,
+    1.0
+   ],
+   "cat": "road",
+   "cn": "道路弯道",
+   "file": "res://models/road/road-bend.glb",
+   "id": "road/road-bend",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.0199999995529652,
+    1.0
+   ],
+   "cat": "road",
+   "cn": "道路十字路口 line",
+   "file": "res://models/road/road-crossroad-line.glb",
+   "id": "road/road-crossroad-line",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.0199999995529652,
+    1.0
+   ],
+   "cat": "road",
+   "cn": "道路十字路口小径",
+   "file": "res://models/road/road-crossroad-path.glb",
+   "id": "road/road-crossroad-path",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.0199999995529652,
+    1.0
+   ],
+   "cat": "road",
+   "cn": "道路十字路口",
+   "file": "res://models/road/road-crossroad.glb",
+   "id": "road/road-crossroad",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    2.0,
+    0.0199999995529652,
+    2.0
+   ],
+   "cat": "road",
+   "cn": "道路弯道路口",
+   "file": "res://models/road/road-curve-intersection.glb",
+   "id": "road/road-curve-intersection",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    2.0,
+    0.0199999995529652,
+    2.0
+   ],
+   "cat": "road",
+   "cn": "道路弯道 pavement",
+   "file": "res://models/road/road-curve-pavement.glb",
+   "id": "road/road-curve-pavement",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    2.0,
+    0.0199999995529652,
+    2.0
+   ],
+   "cat": "road",
+   "cn": "道路弯道",
+   "file": "res://models/road/road-curve.glb",
+   "id": "road/road-curve",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.0199999995529652,
+    1.0
+   ],
+   "cat": "road",
+   "cn": "道路尽头圆",
+   "file": "res://models/road/road-end-round.glb",
+   "id": "road/road-end-round",
+   "min_y": -0.00000000000000000281996644846806
+  },
+  {
+   "aabb": [
+    1.0,
+    0.0199999995529652,
+    1.0
+   ],
+   "cat": "road",
+   "cn": "道路尽头",
+   "file": "res://models/road/road-end.glb",
+   "id": "road/road-end",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.0199999995529652,
+    1.0
+   ],
+   "cat": "road",
+   "cn": "道路路口 line",
+   "file": "res://models/road/road-intersection-line.glb",
+   "id": "road/road-intersection-line",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.0199999995529652,
+    1.0
+   ],
+   "cat": "road",
+   "cn": "道路路口小径",
+   "file": "res://models/road/road-intersection-path.glb",
+   "id": "road/road-intersection-path",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.0199999995529652,
+    1.0
+   ],
+   "cat": "road",
+   "cn": "道路路口",
+   "file": "res://models/road/road-intersection.glb",
+   "id": "road/road-intersection",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    2.0,
+    0.519999980926514,
+    1.0
+   ],
+   "cat": "road",
+   "cn": "道路斜坡路弯道",
+   "file": "res://models/road/road-slant-curve.glb",
+   "id": "road/road-slant-curve",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    2.0,
+    0.519999980926514,
+    1.0
+   ],
+   "cat": "road",
+   "cn": "道路斜坡路平板弯道",
+   "file": "res://models/road/road-slant-flat-curve.glb",
+   "id": "road/road-slant-flat-curve",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.519999980926514,
+    1.0
+   ],
+   "cat": "road",
+   "cn": "道路斜坡路平板高",
+   "file": "res://models/road/road-slant-flat-high.glb",
+   "id": "road/road-slant-flat-high",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.269999980926514,
+    1.0
+   ],
+   "cat": "road",
+   "cn": "道路斜坡路平板",
+   "file": "res://models/road/road-slant-flat.glb",
+   "id": "road/road-slant-flat",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.519999980926514,
+    1.0
+   ],
+   "cat": "road",
+   "cn": "道路斜坡路高",
+   "file": "res://models/road/road-slant-high.glb",
+   "id": "road/road-slant-high",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.269999980926514,
+    1.0
+   ],
+   "cat": "road",
+   "cn": "道路斜坡路",
+   "file": "res://models/road/road-slant.glb",
+   "id": "road/road-slant",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.0199999995529652,
+    1.0
+   ],
+   "cat": "road",
+   "cn": "道路广场",
+   "file": "res://models/road/road-square.glb",
+   "id": "road/road-square",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.5,
+    0.0199999995529652,
+    1.0
+   ],
+   "cat": "road",
+   "cn": "道路直路 half",
+   "file": "res://models/road/road-straight-half.glb",
+   "id": "road/road-straight-half",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.0199999995529652,
+    1.0
+   ],
+   "cat": "road",
+   "cn": "道路直路",
+   "file": "res://models/road/road-straight.glb",
+   "id": "road/road-straight",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.00207257270813,
+    0.100000001490116,
+    0.831075429916382
+   ],
+   "cat": "medieval",
+   "cn": "桥 draw",
+   "file": "res://models/medieval/bridge-draw.glb",
+   "id": "medieval/bridge-draw",
+   "min_y": -0.0000000000000000733191255922179
+  },
+  {
+   "aabb": [
+    0.930000007152557,
+    1.17599999904633,
+    0.930000007152557
+   ],
+   "cat": "medieval",
+   "cn": "桥直路 pillar",
+   "file": "res://models/medieval/bridge-straight-pillar.glb",
+   "id": "medieval/bridge-straight-pillar",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.930000007152557,
+    1.17599999904633,
+    0.930000007152557
+   ],
+   "cat": "medieval",
+   "cn": "桥直路",
+   "file": "res://models/medieval/bridge-straight.glb",
+   "id": "medieval/bridge-straight",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.150000005960464,
+    0.605340003967285,
+    0.359373599290848
+   ],
+   "cat": "medieval",
+   "cn": "门",
+   "file": "res://models/medieval/door.glb",
+   "id": "medieval/door",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.0399999991059303,
+    2.16999983787537,
+    0.629999995231628
+   ],
+   "cat": "medieval",
+   "cn": "旗帜横幅 long",
+   "file": "res://models/medieval/flag-banner-long.glb",
+   "id": "medieval/flag-banner-long",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.0399999991059303,
+    0.780000030994415,
+    0.629999995231628
+   ],
+   "cat": "medieval",
+   "cn": "旗帜横幅矮",
+   "file": "res://models/medieval/flag-banner-short.glb",
+   "id": "medieval/flag-banner-short",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.106375500559807,
+    0.865614473819733,
+    0.573887705802917
+   ],
+   "cat": "medieval",
+   "cn": "旗帜三角旗",
+   "file": "res://models/medieval/flag-pennant.glb",
+   "id": "medieval/flag-pennant",
+   "min_y": -0.00000000000000000000000000000016
+  },
+  {
+   "aabb": [
+    0.106375500559807,
+    0.865614473819733,
+    0.546875476837158
+   ],
+   "cat": "medieval",
+   "cn": "旗帜宽",
+   "file": "res://models/medieval/flag-wide.glb",
+   "id": "medieval/flag-wide",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.106375500559807,
+    0.865614473819733,
+    0.432287752628326
+   ],
+   "cat": "medieval",
+   "cn": "旗帜",
+   "file": "res://models/medieval/flag.glb",
+   "id": "medieval/flag",
+   "min_y": -0.00000000000000000000000000000008
+  },
+  {
+   "aabb": [
+    0.151600003242493,
+    0.910338521003723,
+    0.662150919437408
+   ],
+   "cat": "medieval",
+   "cn": "城门",
+   "file": "res://models/medieval/gate.glb",
+   "id": "medieval/gate",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.288299977779388,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "地块丘陵",
+   "file": "res://models/medieval/ground-hills.glb",
+   "id": "medieval/ground-hills",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.00000999999974737875,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "地块",
+   "file": "res://models/medieval/ground.glb",
+   "id": "medieval/ground",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.0714409947395325,
+    0.730069220066071,
+    0.695258438587189
+   ],
+   "cat": "medieval",
+   "cn": "metal城门",
+   "file": "res://models/medieval/metal-gate.glb",
+   "id": "medieval/metal-gate",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.2008136510849,
+    0.5,
+    1.34815049171448
+   ],
+   "cat": "medieval",
+   "cn": "岩石大",
+   "file": "res://models/medieval/rocks-large.glb",
+   "id": "medieval/rocks-large",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.03004217147827,
+    0.5,
+    1.10530877113342
+   ],
+   "cat": "medieval",
+   "cn": "岩石小",
+   "file": "res://models/medieval/rocks-small.glb",
+   "id": "medieval/rocks-small",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.63034558296204,
+    0.91031402349472,
+    1.19849896430969
+   ],
+   "cat": "medieval",
+   "cn": "攻城弩炮",
+   "file": "res://models/medieval/siege-ballista.glb",
+   "id": "medieval/siege-ballista",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.73479402065277,
+    1.32964193820953,
+    1.20985317230225
+   ],
+   "cat": "medieval",
+   "cn": "攻城投石机",
+   "file": "res://models/medieval/siege-catapult.glb",
+   "id": "medieval/siege-catapult",
+   "min_y": -0.148985996842384
+  },
+  {
+   "aabb": [
+    2.08734846115112,
+    1.1842885017395,
+    1.00018906593323
+   ],
+   "cat": "medieval",
+   "cn": "攻城冲车",
+   "file": "res://models/medieval/siege-ram.glb",
+   "id": "medieval/siege-ram",
+   "min_y": 0.0000000000000000451194631754889
+  },
+  {
+   "aabb": [
+    1.96560001373291,
+    2.67989611625671,
+    1.20985305309296
+   ],
+   "cat": "medieval",
+   "cn": "攻城塔楼",
+   "file": "res://models/medieval/siege-tower.glb",
+   "id": "medieval/siege-tower",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.85124480724335,
+    1.95863401889801,
+    1.25798404216766
+   ],
+   "cat": "medieval",
+   "cn": "攻城回回炮",
+   "file": "res://models/medieval/siege-trebuchet.glb",
+   "id": "medieval/siege-trebuchet",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.232500001788139,
+    0.674999952316284,
+    0.819000005722046
+   ],
+   "cat": "medieval",
+   "cn": "楼梯石广场",
+   "file": "res://models/medieval/stairs-stone-square.glb",
+   "id": "medieval/stairs-stone-square",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.232500001788139,
+    0.674999952316284,
+    0.819000005722046
+   ],
+   "cat": "medieval",
+   "cn": "楼梯石",
+   "file": "res://models/medieval/stairs-stone.glb",
+   "id": "medieval/stairs-stone",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    1.30999994277954,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "塔楼基座",
+   "file": "res://models/medieval/tower-base.glb",
+   "id": "medieval/tower-base",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.899999976158142,
+    1.30999994277954,
+    0.779422879219055
+   ],
+   "cat": "medieval",
+   "cn": "塔楼六角基座",
+   "file": "res://models/medieval/tower-hexagon-base.glb",
+   "id": "medieval/tower-hexagon-base",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.952437400817871,
+    0.46000000834465,
+    0.824835002422333
+   ],
+   "cat": "medieval",
+   "cn": "塔楼六角中段",
+   "file": "res://models/medieval/tower-hexagon-mid.glb",
+   "id": "medieval/tower-hexagon-mid",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.976319968700409,
+    0.753679990768433,
+    0.845517933368683
+   ],
+   "cat": "medieval",
+   "cn": "塔楼六角屋顶 secondary",
+   "file": "res://models/medieval/tower-hexagon-roof-secondary.glb",
+   "id": "medieval/tower-hexagon-roof-secondary",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.976319968700409,
+    0.829999983310699,
+    0.845517933368683
+   ],
+   "cat": "medieval",
+   "cn": "塔楼六角屋顶",
+   "file": "res://models/medieval/tower-hexagon-roof.glb",
+   "id": "medieval/tower-hexagon-roof",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.863999962806702,
+    0.46000000834465,
+    0.74824595451355
+   ],
+   "cat": "medieval",
+   "cn": "塔楼六角顶木",
+   "file": "res://models/medieval/tower-hexagon-top-wood.glb",
+   "id": "medieval/tower-hexagon-top-wood",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.863999962806702,
+    0.129999995231628,
+    0.74824595451355
+   ],
+   "cat": "medieval",
+   "cn": "塔楼六角顶",
+   "file": "res://models/medieval/tower-hexagon-top.glb",
+   "id": "medieval/tower-hexagon-top",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.17000019550323,
+    2.1399507522583,
+    1.13714802265167
+   ],
+   "cat": "medieval",
+   "cn": "塔楼斜坡路屋顶",
+   "file": "res://models/medieval/tower-slant-roof.glb",
+   "id": "medieval/tower-slant-roof",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.930000007152557,
+    1.00999999046326,
+    0.930000007152557
+   ],
+   "cat": "medieval",
+   "cn": "塔楼广场 arch",
+   "file": "res://models/medieval/tower-square-arch.glb",
+   "id": "medieval/tower-square-arch",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.449999988079071,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "塔楼广场基座 border",
+   "file": "res://models/medieval/tower-square-base-border.glb",
+   "id": "medieval/tower-square-base-border",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    1.00999999046326,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "塔楼广场基座 color",
+   "file": "res://models/medieval/tower-square-base-color.glb",
+   "id": "medieval/tower-square-base-color",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    1.00999999046326,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "塔楼广场基座",
+   "file": "res://models/medieval/tower-square-base.glb",
+   "id": "medieval/tower-square-base",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.930000007152557,
+    0.20160000026226,
+    0.930000007152557
+   ],
+   "cat": "medieval",
+   "cn": "塔楼广场中段 color",
+   "file": "res://models/medieval/tower-square-mid-color.glb",
+   "id": "medieval/tower-square-mid-color",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.930000007152557,
+    1.00999999046326,
+    0.930000007152557
+   ],
+   "cat": "medieval",
+   "cn": "塔楼广场中段门",
+   "file": "res://models/medieval/tower-square-mid-door.glb",
+   "id": "medieval/tower-square-mid-door",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.930000066757202,
+    0.878153562545776,
+    0.930000066757202
+   ],
+   "cat": "medieval",
+   "cn": "塔楼广场中段开放简易",
+   "file": "res://models/medieval/tower-square-mid-open-simple.glb",
+   "id": "medieval/tower-square-mid-open-simple",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.930000066757202,
+    1.00999999046326,
+    0.930000066757202
+   ],
+   "cat": "medieval",
+   "cn": "塔楼广场中段开放",
+   "file": "res://models/medieval/tower-square-mid-open.glb",
+   "id": "medieval/tower-square-mid-open",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.930000007152557,
+    1.00999999046326,
+    0.930000007152557
+   ],
+   "cat": "medieval",
+   "cn": "塔楼广场中段 windows",
+   "file": "res://models/medieval/tower-square-mid-windows.glb",
+   "id": "medieval/tower-square-mid-windows",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.930000007152557,
+    1.00999999046326,
+    0.930000007152557
+   ],
+   "cat": "medieval",
+   "cn": "塔楼广场中段",
+   "file": "res://models/medieval/tower-square-mid.glb",
+   "id": "medieval/tower-square-mid",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    2.00999999046326,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "塔楼广场屋顶",
+   "file": "res://models/medieval/tower-square-roof.glb",
+   "id": "medieval/tower-square-roof",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.379999995231628,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "塔楼广场顶 color",
+   "file": "res://models/medieval/tower-square-top-color.glb",
+   "id": "medieval/tower-square-top-color",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    1.07999992370605,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "塔楼广场顶屋顶高 windows",
+   "file": "res://models/medieval/tower-square-top-roof-high-windows.glb",
+   "id": "medieval/tower-square-top-roof-high-windows",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    1.34999990463257,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "塔楼广场顶屋顶高",
+   "file": "res://models/medieval/tower-square-top-roof-high.glb",
+   "id": "medieval/tower-square-top-roof-high",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.949999928474426,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "塔楼广场顶屋顶 rounded",
+   "file": "res://models/medieval/tower-square-top-roof-rounded.glb",
+   "id": "medieval/tower-square-top-roof-rounded",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "塔楼广场顶屋顶",
+   "file": "res://models/medieval/tower-square-top-roof.glb",
+   "id": "medieval/tower-square-top-roof",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.300000011920929,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "塔楼广场顶",
+   "file": "res://models/medieval/tower-square-top.glb",
+   "id": "medieval/tower-square-top",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    1.30999994277954,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "塔楼广场",
+   "file": "res://models/medieval/tower-square.glb",
+   "id": "medieval/tower-square",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    0.129999995231628,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "塔楼顶",
+   "file": "res://models/medieval/tower-top.glb",
+   "id": "medieval/tower-top",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.888665437698364,
+    1.84920001029968,
+    0.889781892299652
+   ],
+   "cat": "medieval",
+   "cn": "树大",
+   "file": "res://models/medieval/tree-large.glb",
+   "id": "medieval/tree-large",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.249487146735191,
+    0.277136862277985,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "树原木",
+   "file": "res://models/medieval/tree-log.glb",
+   "id": "medieval/tree-log",
+   "min_y": -0.10565509647131
+  },
+  {
+   "aabb": [
+    0.738054990768433,
+    1.34920001029968,
+    0.720000028610229
+   ],
+   "cat": "medieval",
+   "cn": "树小",
+   "file": "res://models/medieval/tree-small.glb",
+   "id": "medieval/tree-small",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.395999997854233,
+    0.375115990638733,
+    0.34294605255127
+   ],
+   "cat": "medieval",
+   "cn": "树 trunk",
+   "file": "res://models/medieval/tree-trunk.glb",
+   "id": "medieval/tree-trunk",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.5,
+    1.43999993801117,
+    1.5
+   ],
+   "cat": "medieval",
+   "cn": "墙转角 half塔楼",
+   "file": "res://models/medieval/wall-corner-half-tower.glb",
+   "id": "medieval/wall-corner-half-tower",
+   "min_y": -0.000000000000000270716785670378
+  },
+  {
+   "aabb": [
+    1.0,
+    1.30999994277954,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "墙转角 half",
+   "file": "res://models/medieval/wall-corner-half.glb",
+   "id": "medieval/wall-corner-half",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    1.30999994277954,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "墙转角斜坡路",
+   "file": "res://models/medieval/wall-corner-slant.glb",
+   "id": "medieval/wall-corner-slant",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    1.30999994277954,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "墙转角",
+   "file": "res://models/medieval/wall-corner.glb",
+   "id": "medieval/wall-corner",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.5,
+    1.30999994277954,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "墙 doorway",
+   "file": "res://models/medieval/wall-doorway.glb",
+   "id": "medieval/wall-doorway",
+   "min_y": -0.0000000000000000451534073591056
+  },
+  {
+   "aabb": [
+    0.604582190513611,
+    1.30999994277954,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "墙 half modular",
+   "file": "res://models/medieval/wall-half-modular.glb",
+   "id": "medieval/wall-half-modular",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    1.30999994277954,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "墙 half",
+   "file": "res://models/medieval/wall-half.glb",
+   "id": "medieval/wall-half",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.5,
+    1.30999994277954,
+    0.5
+   ],
+   "cat": "medieval",
+   "cn": "墙窄转角",
+   "file": "res://models/medieval/wall-narrow-corner.glb",
+   "id": "medieval/wall-narrow-corner",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.629999995231628,
+    1.30999994277954,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "墙窄城门",
+   "file": "res://models/medieval/wall-narrow-gate.glb",
+   "id": "medieval/wall-narrow-gate",
+   "min_y": 0.0000000000000000175944591925255
+  },
+  {
+   "aabb": [
+    0.995000004768372,
+    1.44829165935516,
+    1.03425419330597
+   ],
+   "cat": "medieval",
+   "cn": "墙窄楼梯 rail",
+   "file": "res://models/medieval/wall-narrow-stairs-rail.glb",
+   "id": "medieval/wall-narrow-stairs-rail",
+   "min_y": -0.0000000000000000818794523154067
+  },
+  {
+   "aabb": [
+    0.964999973773956,
+    1.30999994277954,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "墙窄楼梯",
+   "file": "res://models/medieval/wall-narrow-stairs.glb",
+   "id": "medieval/wall-narrow-stairs",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.04999995231628,
+    1.44999992847443,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "墙窄木栅栏",
+   "file": "res://models/medieval/wall-narrow-wood-fence.glb",
+   "id": "medieval/wall-narrow-wood-fence",
+   "min_y": -0.0000000000000015561942358049
+  },
+  {
+   "aabb": [
+    1.0,
+    1.30999994277954,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "墙窄木",
+   "file": "res://models/medieval/wall-narrow-wood.glb",
+   "id": "medieval/wall-narrow-wood",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.5,
+    1.30999994277954,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "墙窄",
+   "file": "res://models/medieval/wall-narrow.glb",
+   "id": "medieval/wall-narrow",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    1.30999994277954,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "墙 pillar",
+   "file": "res://models/medieval/wall-pillar.glb",
+   "id": "medieval/wall-pillar",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.269999980926514,
+    1.11000001430511,
+    0.166601851582527
+   ],
+   "cat": "medieval",
+   "cn": "墙 stud",
+   "file": "res://models/medieval/wall-stud.glb",
+   "id": "medieval/wall-stud",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    1.30999994277954,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "墙 to窄",
+   "file": "res://models/medieval/wall-to-narrow.glb",
+   "id": "medieval/wall-to-narrow",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.0,
+    1.30999994277954,
+    1.0
+   ],
+   "cat": "medieval",
+   "cn": "墙",
+   "file": "res://models/medieval/wall.glb",
+   "id": "medieval/wall",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.19000005722046,
+    0.419999986886978,
+    0.560000002384186
+   ],
+   "cat": "furniture",
+   "cn": "浴缸",
+   "file": "res://models/furniture/bathtub.glb",
+   "id": "furniture/bathtub",
+   "min_y": -0.000000000000000315836245537145
+  },
+  {
+   "aabb": [
+    0.571000039577484,
+    0.849999964237213,
+    1.09500002861023
+   ],
+   "cat": "furniture",
+   "cn": "床 bunk",
+   "file": "res://models/furniture/bedBunk.glb",
+   "id": "furniture/bedBunk",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.956000030040741,
+    0.375,
+    1.125
+   ],
+   "cat": "furniture",
+   "cn": "床双",
+   "file": "res://models/furniture/bedDouble.glb",
+   "id": "furniture/bedDouble",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.571000039577484,
+    0.375,
+    1.125
+   ],
+   "cat": "furniture",
+   "cn": "床单",
+   "file": "res://models/furniture/bedSingle.glb",
+   "id": "furniture/bedSingle",
+   "min_y": 0.0000000000000331176871950362
+  },
+  {
+   "aabb": [
+    0.400000005960464,
+    0.469999998807907,
+    0.200000002980232
+   ],
+   "cat": "furniture",
+   "cn": "长椅",
+   "file": "res://models/furniture/bench.glb",
+   "id": "furniture/bench",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.400000005960464,
+    0.46000000834465,
+    0.200000002980232
+   ],
+   "cat": "furniture",
+   "cn": "长椅 cushion",
+   "file": "res://models/furniture/benchCushion.glb",
+   "id": "furniture/benchCushion",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.420000016689301,
+    0.200000002980232,
+    0.219999998807907
+   ],
+   "cat": "furniture",
+   "cn": "长椅 cushion矮",
+   "file": "res://models/furniture/benchCushionLow.glb",
+   "id": "furniture/benchCushionLow",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.400000005960464,
+    0.849999964237213,
+    0.25
+   ],
+   "cat": "furniture",
+   "cn": "书架封闭",
+   "file": "res://models/furniture/bookcaseClosed.glb",
+   "id": "furniture/bookcaseClosed",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.400000005960464,
+    0.849999964237213,
+    0.25
+   ],
+   "cat": "furniture",
+   "cn": "书架封闭 doors",
+   "file": "res://models/furniture/bookcaseClosedDoors.glb",
+   "id": "furniture/bookcaseClosedDoors",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.800000011920929,
+    0.789999961853027,
+    0.25
+   ],
+   "cat": "furniture",
+   "cn": "书架封闭宽",
+   "file": "res://models/furniture/bookcaseClosedWide.glb",
+   "id": "furniture/bookcaseClosedWide",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.400000005960464,
+    0.879999935626984,
+    0.25
+   ],
+   "cat": "furniture",
+   "cn": "书架开放",
+   "file": "res://models/furniture/bookcaseOpen.glb",
+   "id": "furniture/bookcaseOpen",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.400000005960464,
+    0.400000005960464,
+    0.25
+   ],
+   "cat": "furniture",
+   "cn": "书架开放矮",
+   "file": "res://models/furniture/bookcaseOpenLow.glb",
+   "id": "furniture/bookcaseOpenLow",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.265999972820282,
+    0.233200013637543,
+    0.21500001847744
+   ],
+   "cat": "furniture",
+   "cn": "柜子床",
+   "file": "res://models/furniture/cabinetBed.glb",
+   "id": "furniture/cabinetBed",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.265999972820282,
+    0.263199985027313,
+    0.21730001270771
+   ],
+   "cat": "furniture",
+   "cn": "柜子床 drawer",
+   "file": "res://models/furniture/cabinetBedDrawer.glb",
+   "id": "furniture/cabinetBedDrawer",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.265999972820282,
+    0.263199985027313,
+    0.21730001270771
+   ],
+   "cat": "furniture",
+   "cn": "柜子床 drawer桌子",
+   "file": "res://models/furniture/cabinetBedDrawerTable.glb",
+   "id": "furniture/cabinetBedDrawerTable",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.800000011920929,
+    0.310000002384186,
+    0.25
+   ],
+   "cat": "furniture",
+   "cn": "柜子电视",
+   "file": "res://models/furniture/cabinetTelevision.glb",
+   "id": "furniture/cabinetTelevision",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.800000011920929,
+    0.310000002384186,
+    0.259999990463257
+   ],
+   "cat": "furniture",
+   "cn": "柜子电视 doors",
+   "file": "res://models/furniture/cabinetTelevisionDoors.glb",
+   "id": "furniture/cabinetTelevisionDoors",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.200000002980232,
+    0.469999998807907,
+    0.200000002980232
+   ],
+   "cat": "furniture",
+   "cn": "椅子",
+   "file": "res://models/furniture/chair.glb",
+   "id": "furniture/chair",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.200000002980232,
+    0.46000000834465,
+    0.200000002980232
+   ],
+   "cat": "furniture",
+   "cn": "椅子 cushion",
+   "file": "res://models/furniture/chairCushion.glb",
+   "id": "furniture/chairCushion",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.334950000047684,
+    0.607599973678589,
+    0.314299046993256
+   ],
+   "cat": "furniture",
+   "cn": "椅子书桌",
+   "file": "res://models/furniture/chairDesk.glb",
+   "id": "furniture/chairDesk",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.200000002980232,
+    0.46000000834465,
+    0.200000002980232
+   ],
+   "cat": "furniture",
+   "cn": "椅子 modern cushion",
+   "file": "res://models/furniture/chairModernCushion.glb",
+   "id": "furniture/chairModernCushion",
+   "min_y": -0.0000000000000000111635782618177
+  },
+  {
+   "aabb": [
+    0.200000002980232,
+    0.46000000834465,
+    0.200000002980232
+   ],
+   "cat": "furniture",
+   "cn": "椅子 modern frame cushion",
+   "file": "res://models/furniture/chairModernFrameCushion.glb",
+   "id": "furniture/chairModernFrameCushion",
+   "min_y": -0.0000000000000000111635782618177
+  },
+  {
+   "aabb": [
+    0.200000002980232,
+    0.454999983310699,
+    0.200000002980232
+   ],
+   "cat": "furniture",
+   "cn": "椅子 rounded",
+   "file": "res://models/furniture/chairRounded.glb",
+   "id": "furniture/chairRounded",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.282200008630753,
+    0.0275560002774,
+    0.118191994726658
+   ],
+   "cat": "furniture",
+   "cn": "电脑 keyboard",
+   "file": "res://models/furniture/computerKeyboard.glb",
+   "id": "furniture/computerKeyboard",
+   "min_y": 0.00000000000000000000000000000016
+  },
+  {
+   "aabb": [
+    0.0496999993920326,
+    0.0235719997435808,
+    0.0851037949323654
+   ],
+   "cat": "furniture",
+   "cn": "电脑 mouse",
+   "file": "res://models/furniture/computerMouse.glb",
+   "id": "furniture/computerMouse",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.392688006162643,
+    0.294285207986832,
+    0.104003995656967
+   ],
+   "cat": "furniture",
+   "cn": "电脑 screen",
+   "file": "res://models/furniture/computerScreen.glb",
+   "id": "furniture/computerScreen",
+   "min_y": -0.00000000000000000000000000000008
+  },
+  {
+   "aabb": [
+    0.734475433826447,
+    0.384407550096512,
+    0.392300009727478
+   ],
+   "cat": "furniture",
+   "cn": "书桌",
+   "file": "res://models/furniture/desk.glb",
+   "id": "furniture/desk",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.974475502967834,
+    0.384407550096512,
+    0.974475502967834
+   ],
+   "cat": "furniture",
+   "cn": "书桌转角",
+   "file": "res://models/furniture/deskCorner.glb",
+   "id": "furniture/deskCorner",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.390000015497208,
+    0.469999998807907,
+    0.379999995231628
+   ],
+   "cat": "furniture",
+   "cn": "烘干机",
+   "file": "res://models/furniture/dryer.glb",
+   "id": "furniture/dryer",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.430000007152557,
+    0.419999986886978,
+    0.209999993443489
+   ],
+   "cat": "furniture",
+   "cn": "厨房 bar",
+   "file": "res://models/furniture/kitchenBar.glb",
+   "id": "furniture/kitchenBar",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.1015625,
+    0.419999986886978,
+    0.209999993443489
+   ],
+   "cat": "furniture",
+   "cn": "厨房 bar尽头",
+   "file": "res://models/furniture/kitchenBarEnd.glb",
+   "id": "furniture/kitchenBarEnd",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.135826170444489,
+    0.227519989013672,
+    0.10911875218153
+   ],
+   "cat": "furniture",
+   "cn": "厨房 blender",
+   "file": "res://models/furniture/kitchenBlender.glb",
+   "id": "furniture/kitchenBlender",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.430000007152557,
+    0.449999988079071,
+    0.449999988079071
+   ],
+   "cat": "furniture",
+   "cn": "厨房柜子",
+   "file": "res://models/furniture/kitchenCabinet.glb",
+   "id": "furniture/kitchenCabinet",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.46000000834465,
+    0.449999988079071,
+    0.46000000834465
+   ],
+   "cat": "furniture",
+   "cn": "厨房柜子转角 inner",
+   "file": "res://models/furniture/kitchenCabinetCornerInner.glb",
+   "id": "furniture/kitchenCabinetCornerInner",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.449999988079071,
+    0.449999988079071,
+    0.449999988079071
+   ],
+   "cat": "furniture",
+   "cn": "厨房柜子转角圆",
+   "file": "res://models/furniture/kitchenCabinetCornerRound.glb",
+   "id": "furniture/kitchenCabinetCornerRound",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.430000007152557,
+    0.449999988079071,
+    0.449999988079071
+   ],
+   "cat": "furniture",
+   "cn": "厨房柜子 drawer",
+   "file": "res://models/furniture/kitchenCabinetDrawer.glb",
+   "id": "furniture/kitchenCabinetDrawer",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.430000007152557,
+    0.390000015497208,
+    0.219999998807907
+   ],
+   "cat": "furniture",
+   "cn": "厨房柜子 upper",
+   "file": "res://models/furniture/kitchenCabinetUpper.glb",
+   "id": "furniture/kitchenCabinetUpper",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.215000003576279,
+    0.390000015497208,
+    0.209999993443489
+   ],
+   "cat": "furniture",
+   "cn": "厨房柜子 upper转角",
+   "file": "res://models/furniture/kitchenCabinetUpperCorner.glb",
+   "id": "furniture/kitchenCabinetUpperCorner",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.430000007152557,
+    0.390000015497208,
+    0.219999998807907
+   ],
+   "cat": "furniture",
+   "cn": "厨房柜子 upper双",
+   "file": "res://models/furniture/kitchenCabinetUpperDouble.glb",
+   "id": "furniture/kitchenCabinetUpperDouble",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.430000007152557,
+    0.195000007748604,
+    0.219999998807907
+   ],
+   "cat": "furniture",
+   "cn": "厨房柜子 upper矮",
+   "file": "res://models/furniture/kitchenCabinetUpperLow.glb",
+   "id": "furniture/kitchenCabinetUpperLow",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.18953999876976,
+    0.177488997578621,
+    0.240167051553726
+   ],
+   "cat": "furniture",
+   "cn": "厨房咖啡 machine",
+   "file": "res://models/furniture/kitchenCoffeeMachine.glb",
+   "id": "furniture/kitchenCoffeeMachine",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.430000007152557,
+    0.920000016689301,
+    0.29193389415741
+   ],
+   "cat": "furniture",
+   "cn": "厨房 fridge",
+   "file": "res://models/furniture/kitchenFridge.glb",
+   "id": "furniture/kitchenFridge",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.430000007152557,
+    0.86874783039093,
+    0.449999988079071
+   ],
+   "cat": "furniture",
+   "cn": "厨房 fridge built in",
+   "file": "res://models/furniture/kitchenFridgeBuiltIn.glb",
+   "id": "furniture/kitchenFridgeBuiltIn",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.519999980926514,
+    0.920000016689301,
+    0.405549913644791
+   ],
+   "cat": "furniture",
+   "cn": "厨房 fridge大",
+   "file": "res://models/furniture/kitchenFridgeLarge.glb",
+   "id": "furniture/kitchenFridgeLarge",
+   "min_y": -0.00000000000000000104575326665039
+  },
+  {
+   "aabb": [
+    0.430000007152557,
+    0.60024631023407,
+    0.29193389415741
+   ],
+   "cat": "furniture",
+   "cn": "厨房 fridge小",
+   "file": "res://models/furniture/kitchenFridgeSmall.glb",
+   "id": "furniture/kitchenFridgeSmall",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.28999999165535,
+    0.179999992251396,
+    0.230009987950325
+   ],
+   "cat": "furniture",
+   "cn": "厨房 microwave",
+   "file": "res://models/furniture/kitchenMicrowave.glb",
+   "id": "furniture/kitchenMicrowave",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.430000007152557,
+    0.489999979734421,
+    0.449999988079071
+   ],
+   "cat": "furniture",
+   "cn": "厨房水槽",
+   "file": "res://models/furniture/kitchenSink.glb",
+   "id": "furniture/kitchenSink",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.430000007152557,
+    0.449999988079071,
+    0.449999988079071
+   ],
+   "cat": "furniture",
+   "cn": "厨房 stove",
+   "file": "res://models/furniture/kitchenStove.glb",
+   "id": "furniture/kitchenStove",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.430000007152557,
+    0.449999988079071,
+    0.449999988079071
+   ],
+   "cat": "furniture",
+   "cn": "厨房 stove electric",
+   "file": "res://models/furniture/kitchenStoveElectric.glb",
+   "id": "furniture/kitchenStoveElectric",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.152039408683777,
+    0.860000014305115,
+    0.175559997558594
+   ],
+   "cat": "furniture",
+   "cn": "灯圆落地",
+   "file": "res://models/furniture/lampRoundFloor.glb",
+   "id": "furniture/lampRoundFloor",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.152039408683777,
+    0.314249992370605,
+    0.175559997558594
+   ],
+   "cat": "furniture",
+   "cn": "灯圆桌子",
+   "file": "res://models/furniture/lampRoundTable.glb",
+   "id": "furniture/lampRoundTable",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.120000004768372,
+    0.230000004172325,
+    0.120000004768372
+   ],
+   "cat": "furniture",
+   "cn": "灯广场 ceiling",
+   "file": "res://models/furniture/lampSquareCeiling.glb",
+   "id": "furniture/lampSquareCeiling",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.120000004768372,
+    0.860000014305115,
+    0.120000004768372
+   ],
+   "cat": "furniture",
+   "cn": "灯广场落地",
+   "file": "res://models/furniture/lampSquareFloor.glb",
+   "id": "furniture/lampSquareFloor",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.120000004768372,
+    0.28999999165535,
+    0.120000004768372
+   ],
+   "cat": "furniture",
+   "cn": "灯广场桌子",
+   "file": "res://models/furniture/lampSquareTable.glb",
+   "id": "furniture/lampSquareTable",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.226635366678238,
+    0.092799998819828,
+    0.150335997343063
+   ],
+   "cat": "furniture",
+   "cn": "灯墙",
+   "file": "res://models/furniture/lampWall.glb",
+   "id": "furniture/lampWall",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.263999998569489,
+    0.161809399724007,
+    0.240065157413483
+   ],
+   "cat": "furniture",
+   "cn": "笔记本电脑",
+   "file": "res://models/furniture/laptop.glb",
+   "id": "furniture/laptop",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.489999979734421,
+    0.46000000834465,
+    0.410000026226044
+   ],
+   "cat": "furniture",
+   "cn": "躺椅椅子",
+   "file": "res://models/furniture/loungeChair.glb",
+   "id": "furniture/loungeChair",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.489999979734421,
+    0.629999995231628,
+    0.674692690372467
+   ],
+   "cat": "furniture",
+   "cn": "躺椅椅子 relax",
+   "file": "res://models/furniture/loungeChairRelax.glb",
+   "id": "furniture/loungeChairRelax",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.729595303535461,
+    0.400000005960464,
+    0.410000026226044
+   ],
+   "cat": "furniture",
+   "cn": "躺椅 design椅子",
+   "file": "res://models/furniture/loungeDesignChair.glb",
+   "id": "furniture/loungeDesignChair",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.12000000476837,
+    0.400000005960464,
+    0.410000026226044
+   ],
+   "cat": "furniture",
+   "cn": "躺椅 design sofa",
+   "file": "res://models/furniture/loungeDesignSofa.glb",
+   "id": "furniture/loungeDesignSofa",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.34982848167419,
+    0.400000005960464,
+    1.34982848167419
+   ],
+   "cat": "furniture",
+   "cn": "躺椅 design sofa转角",
+   "file": "res://models/furniture/loungeDesignSofaCorner.glb",
+   "id": "furniture/loungeDesignSofaCorner",
+   "min_y": -0.00000000372529029846191
+  },
+  {
+   "aabb": [
+    0.979999959468842,
+    0.46000000834465,
+    0.410000026226044
+   ],
+   "cat": "furniture",
+   "cn": "躺椅 sofa",
+   "file": "res://models/furniture/loungeSofa.glb",
+   "id": "furniture/loungeSofa",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.979999959468842,
+    0.46000000834465,
+    0.979999959468842
+   ],
+   "cat": "furniture",
+   "cn": "躺椅 sofa转角",
+   "file": "res://models/furniture/loungeSofaCorner.glb",
+   "id": "furniture/loungeSofaCorner",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.979999959468842,
+    0.46000000834465,
+    0.820000052452087
+   ],
+   "cat": "furniture",
+   "cn": "躺椅 sofa long",
+   "file": "res://models/furniture/loungeSofaLong.glb",
+   "id": "furniture/loungeSofaLong",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.439828544855118,
+    0.230000004172325,
+    0.450000017881393
+   ],
+   "cat": "furniture",
+   "cn": "躺椅 sofa ottoman",
+   "file": "res://models/furniture/loungeSofaOttoman.glb",
+   "id": "furniture/loungeSofaOttoman",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.0946607366204262,
+    0.140000000596046,
+    0.0946607366204262
+   ],
+   "cat": "furniture",
+   "cn": "植物 small1",
+   "file": "res://models/furniture/plantSmall1.glb",
+   "id": "furniture/plantSmall1",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.0946607366204262,
+    0.140000000596046,
+    0.0946607366204262
+   ],
+   "cat": "furniture",
+   "cn": "植物 small2",
+   "file": "res://models/furniture/plantSmall2.glb",
+   "id": "furniture/plantSmall2",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.0980000048875809,
+    0.144999995827675,
+    0.0848704949021339
+   ],
+   "cat": "furniture",
+   "cn": "植物 small3",
+   "file": "res://models/furniture/plantSmall3.glb",
+   "id": "furniture/plantSmall3",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.212059274315834,
+    0.6540167927742,
+    0.24146194756031
+   ],
+   "cat": "furniture",
+   "cn": "potted植物",
+   "file": "res://models/furniture/pottedPlant.glb",
+   "id": "furniture/pottedPlant",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.314999997615814,
+    0.228191077709198,
+    0.0975000038743019
+   ],
+   "cat": "furniture",
+   "cn": "收音机",
+   "file": "res://models/furniture/radio.glb",
+   "id": "furniture/radio",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.429300010204315,
+    0.00999999977648258,
+    0.237009033560753
+   ],
+   "cat": "furniture",
+   "cn": "地毯 doormat",
+   "file": "res://models/furniture/rugDoormat.glb",
+   "id": "furniture/rugDoormat",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.5699999332428,
+    0.0100099993869662,
+    0.920000016689301
+   ],
+   "cat": "furniture",
+   "cn": "地毯 rectangle",
+   "file": "res://models/furniture/rugRectangle.glb",
+   "id": "furniture/rugRectangle",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.920000016689301,
+    0.0100099993869662,
+    0.920000016689301
+   ],
+   "cat": "furniture",
+   "cn": "地毯圆",
+   "file": "res://models/furniture/rugRound.glb",
+   "id": "furniture/rugRound",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    1.5699999332428,
+    0.0100099993869662,
+    0.920000016689301
+   ],
+   "cat": "furniture",
+   "cn": "地毯 rounded",
+   "file": "res://models/furniture/rugRounded.glb",
+   "id": "furniture/rugRounded",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.904325902462006,
+    0.0100099993869662,
+    0.920000016689301
+   ],
+   "cat": "furniture",
+   "cn": "地毯广场",
+   "file": "res://models/furniture/rugSquare.glb",
+   "id": "furniture/rugSquare",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.561792016029358,
+    1.09403324127197,
+    0.581791996955872
+   ],
+   "cat": "furniture",
+   "cn": "淋浴",
+   "file": "res://models/furniture/shower.glb",
+   "id": "furniture/shower",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.561792016029358,
+    1.09403336048126,
+    0.561792016029358
+   ],
+   "cat": "furniture",
+   "cn": "淋浴圆",
+   "file": "res://models/furniture/showerRound.glb",
+   "id": "furniture/showerRound",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.148000001907349,
+    0.636399984359741,
+    0.148000001907349
+   ],
+   "cat": "furniture",
+   "cn": "音箱",
+   "file": "res://models/furniture/speaker.glb",
+   "id": "furniture/speaker",
+   "min_y": 0.0000000000000000169197991043986
+  },
+  {
+   "aabb": [
+    0.148000001907349,
+    0.297979652881622,
+    0.133199989795685
+   ],
+   "cat": "furniture",
+   "cn": "音箱小",
+   "file": "res://models/furniture/speakerSmall.glb",
+   "id": "furniture/speakerSmall",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.265439987182617,
+    0.435000002384186,
+    0.229877784848213
+   ],
+   "cat": "furniture",
+   "cn": "凳子 bar",
+   "file": "res://models/furniture/stoolBar.glb",
+   "id": "furniture/stoolBar",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.153499990701675,
+    0.404999971389771,
+    0.147624015808105
+   ],
+   "cat": "furniture",
+   "cn": "凳子 bar广场",
+   "file": "res://models/furniture/stoolBarSquare.glb",
+   "id": "furniture/stoolBarSquare",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.841487944126129,
+    0.326733976602554,
+    0.447373330593109
+   ],
+   "cat": "furniture",
+   "cn": "桌子",
+   "file": "res://models/furniture/table.glb",
+   "id": "furniture/table",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.841487944126129,
+    0.326733976602554,
+    0.447373330593109
+   ],
+   "cat": "furniture",
+   "cn": "桌子 cloth",
+   "file": "res://models/furniture/tableCloth.glb",
+   "id": "furniture/tableCloth",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.660996079444885,
+    0.230000004172325,
+    0.400000005960464
+   ],
+   "cat": "furniture",
+   "cn": "桌子咖啡",
+   "file": "res://models/furniture/tableCoffee.glb",
+   "id": "furniture/tableCoffee",
+   "min_y": -0.000000000000000360955705403911
+  },
+  {
+   "aabb": [
+    0.660996079444885,
+    0.230010002851486,
+    0.400000005960464
+   ],
+   "cat": "furniture",
+   "cn": "桌子咖啡 glass",
+   "file": "res://models/furniture/tableCoffeeGlass.glb",
+   "id": "furniture/tableCoffeeGlass",
+   "min_y": -0.000000000000000360955705403911
+  },
+  {
+   "aabb": [
+    0.400000005960464,
+    0.230010002851486,
+    0.400000005960464
+   ],
+   "cat": "furniture",
+   "cn": "桌子咖啡 glass广场",
+   "file": "res://models/furniture/tableCoffeeGlassSquare.glb",
+   "id": "furniture/tableCoffeeGlassSquare",
+   "min_y": -0.000000000000000360955705403911
+  },
+  {
+   "aabb": [
+    0.400000005960464,
+    0.230000004172325,
+    0.400000005960464
+   ],
+   "cat": "furniture",
+   "cn": "桌子咖啡广场",
+   "file": "res://models/furniture/tableCoffeeSquare.glb",
+   "id": "furniture/tableCoffeeSquare",
+   "min_y": -0.000000000000000360955705403911
+  },
+  {
+   "aabb": [
+    0.852119982242584,
+    0.347413331270218,
+    0.447373300790787
+   ],
+   "cat": "furniture",
+   "cn": "桌子交叉",
+   "file": "res://models/furniture/tableCross.glb",
+   "id": "furniture/tableCross",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.852119982242584,
+    0.347413331270218,
+    0.447373300790787
+   ],
+   "cat": "furniture",
+   "cn": "桌子交叉 cloth",
+   "file": "res://models/furniture/tableCrossCloth.glb",
+   "id": "furniture/tableCrossCloth",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.841487944126129,
+    0.326743990182877,
+    0.447373330593109
+   ],
+   "cat": "furniture",
+   "cn": "桌子 glass",
+   "file": "res://models/furniture/tableGlass.glb",
+   "id": "furniture/tableGlass",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.692820310592651,
+    0.366733968257904,
+    0.800000011920929
+   ],
+   "cat": "furniture",
+   "cn": "桌子圆",
+   "file": "res://models/furniture/tableRound.glb",
+   "id": "furniture/tableRound",
+   "min_y": -0.269999980926514
+  },
+  {
+   "aabb": [
+    0.26452773809433,
+    0.102734282612801,
+    0.0799999982118607
+   ],
+   "cat": "furniture",
+   "cn": "电视天线",
+   "file": "res://models/furniture/televisionAntenna.glb",
+   "id": "furniture/televisionAntenna",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.684800028800964,
+    0.454750001430511,
+    0.1283999979496
+   ],
+   "cat": "furniture",
+   "cn": "电视 modern",
+   "file": "res://models/furniture/televisionModern.glb",
+   "id": "furniture/televisionModern",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.410000026226044,
+    0.269999980926514,
+    0.269999980926514
+   ],
+   "cat": "furniture",
+   "cn": "电视 vintage",
+   "file": "res://models/furniture/televisionVintage.glb",
+   "id": "furniture/televisionVintage",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.312550008296967,
+    0.450964987277985,
+    0.47717672586441
+   ],
+   "cat": "furniture",
+   "cn": "马桶",
+   "file": "res://models/furniture/toilet.glb",
+   "id": "furniture/toilet",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.303620010614395,
+    0.450965017080307,
+    0.387176722288132
+   ],
+   "cat": "furniture",
+   "cn": "马桶广场",
+   "file": "res://models/furniture/toiletSquare.glb",
+   "id": "furniture/toiletSquare",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.390000015497208,
+    0.469999998807907,
+    0.389999985694885
+   ],
+   "cat": "furniture",
+   "cn": "洗衣机",
+   "file": "res://models/furniture/washer.glb",
+   "id": "furniture/washer",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.390000015497208,
+    0.939999997615814,
+    0.389999985694885
+   ],
+   "cat": "furniture",
+   "cn": "洗衣机烘干机 stacked",
+   "file": "res://models/furniture/washerDryerStacked.glb",
+   "id": "furniture/washerDryerStacked",
+   "min_y": 0.0
+  },
+  {
+   "aabb": [
+    0.341661602258682,
+    0.532999992370605,
+    0.297189593315125
+   ],
+   "cat": "nature",
+   "cn": "仙人掌矮",
+   "file": "res://models/nature/cactus_short.glb",
+   "id": "nature/cactus_short",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.396249949932098,
+    0.75,
+    0.339082062244415
+   ],
+   "cat": "nature",
+   "cn": "仙人掌高",
+   "file": "res://models/nature/cactus_tall.glb",
+   "id": "nature/cactus_tall",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.469199985265732,
+    0.0676000043749809,
+    0.469199985265732
+   ],
+   "cat": "nature",
+   "cn": "篝火砖",
+   "file": "res://models/nature/campfire_bricks.glb",
+   "id": "nature/campfire_bricks",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.291852325201035,
+    0.0625998303294182,
+    0.291852325201035
+   ],
+   "cat": "nature",
+   "cn": "篝火圆木",
+   "file": "res://models/nature/campfire_logs.glb",
+   "id": "nature/campfire_logs",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.349999994039536,
+    0.0399999991059303,
+    0.349999994039536
+   ],
+   "cat": "nature",
+   "cn": "篝火木板",
+   "file": "res://models/nature/campfire_planks.glb",
+   "id": "nature/campfire_planks",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.54083788394928,
+    0.0777510032057762,
+    0.51550704240799
+   ],
+   "cat": "nature",
+   "cn": "篝火石块",
+   "file": "res://models/nature/campfire_stones.glb",
+   "id": "nature/campfire_stones",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.300000011920929,
+    0.182500004768372,
+    1.14999997615814
+   ],
+   "cat": "nature",
+   "cn": "独木舟",
+   "file": "res://models/nature/canoe.glb",
+   "id": "nature/canoe",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.0767214000225067,
+    0.0361041910946369,
+    0.590192019939423
+   ],
+   "cat": "nature",
+   "cn": "独木舟 paddle",
+   "file": "res://models/nature/canoe_paddle.glb",
+   "id": "nature/canoe_paddle",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    1.0,
+    0.345027297735214,
+    1.0
+   ],
+   "cat": "nature",
+   "cn": "栅栏弯道",
+   "file": "res://models/nature/fence_bend.glb",
+   "id": "nature/fence_bend",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    1.0,
+    0.345027297735214,
+    1.0
+   ],
+   "cat": "nature",
+   "cn": "栅栏弯道中段",
+   "file": "res://models/nature/fence_bendCenter.glb",
+   "id": "nature/fence_bendCenter",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    1.0,
+    0.345027297735214,
+    1.0
+   ],
+   "cat": "nature",
+   "cn": "栅栏转角",
+   "file": "res://models/nature/fence_corner.glb",
+   "id": "nature/fence_corner",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    1.0,
+    0.345027297735214,
+    0.0699999928474426
+   ],
+   "cat": "nature",
+   "cn": "栅栏城门",
+   "file": "res://models/nature/fence_gate.glb",
+   "id": "nature/fence_gate",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    1.0,
+    0.345027297735214,
+    0.0958999991416931
+   ],
+   "cat": "nature",
+   "cn": "栅栏木板",
+   "file": "res://models/nature/fence_planks.glb",
+   "id": "nature/fence_planks",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    1.0,
+    0.345027297735214,
+    0.0598635375499725
+   ],
+   "cat": "nature",
+   "cn": "栅栏木板双",
+   "file": "res://models/nature/fence_planksDouble.glb",
+   "id": "nature/fence_planksDouble",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    1.0,
+    0.345027297735214,
+    0.0699999928474426
+   ],
+   "cat": "nature",
+   "cn": "栅栏简易",
+   "file": "res://models/nature/fence_simple.glb",
+   "id": "nature/fence_simple",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    1.0,
+    0.345027297735214,
+    0.0699999928474426
+   ],
+   "cat": "nature",
+   "cn": "栅栏简易中段",
+   "file": "res://models/nature/fence_simpleCenter.glb",
+   "id": "nature/fence_simpleCenter",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    1.0,
+    0.345027297735214,
+    1.0
+   ],
+   "cat": "nature",
+   "cn": "栅栏简易 diagonal",
+   "file": "res://models/nature/fence_simpleDiagonal.glb",
+   "id": "nature/fence_simpleDiagonal",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    1.0,
+    0.345027297735214,
+    1.0
+   ],
+   "cat": "nature",
+   "cn": "栅栏简易 diagonal中段",
+   "file": "res://models/nature/fence_simpleDiagonalCenter.glb",
+   "id": "nature/fence_simpleDiagonalCenter",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    1.04120588302612,
+    0.345027297735214,
+    0.111205726861954
+   ],
+   "cat": "nature",
+   "cn": "栅栏简易高",
+   "file": "res://models/nature/fence_simpleHigh.glb",
+   "id": "nature/fence_simpleHigh",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    1.04120588302612,
+    0.195027306675911,
+    0.111205726861954
+   ],
+   "cat": "nature",
+   "cn": "栅栏简易矮",
+   "file": "res://models/nature/fence_simpleLow.glb",
+   "id": "nature/fence_simpleLow",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.159097522497177,
+    0.242499992251396,
+    0.181059062480927
+   ],
+   "cat": "nature",
+   "cn": "花 purple A",
+   "file": "res://models/nature/flower_purpleA.glb",
+   "id": "nature/flower_purpleA",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.159097522497177,
+    0.292499989271164,
+    0.181059062480927
+   ],
+   "cat": "nature",
+   "cn": "花红 A",
+   "file": "res://models/nature/flower_redA.glb",
+   "id": "nature/flower_redA",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.159097522497177,
+    0.192499995231628,
+    0.181059062480927
+   ],
+   "cat": "nature",
+   "cn": "花黄 A",
+   "file": "res://models/nature/flower_yellowA.glb",
+   "id": "nature/flower_yellowA",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.381074011325836,
+    0.254000008106232,
+    0.392182797193527
+   ],
+   "cat": "nature",
+   "cn": "草",
+   "file": "res://models/nature/grass.glb",
+   "id": "nature/grass",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.40899783372879,
+    0.254000008106232,
+    0.407888978719711
+   ],
+   "cat": "nature",
+   "cn": "草大",
+   "file": "res://models/nature/grass_large.glb",
+   "id": "nature/grass_large",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.234485998749733,
+    0.142499998211861,
+    0.2573082447052
+   ],
+   "cat": "nature",
+   "cn": "草 leafs",
+   "file": "res://models/nature/grass_leafs.glb",
+   "id": "nature/grass_leafs",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.475897133350372,
+    0.142499998211861,
+    0.487308233976364
+   ],
+   "cat": "nature",
+   "cn": "草 leafs大",
+   "file": "res://models/nature/grass_leafsLarge.glb",
+   "id": "nature/grass_leafsLarge",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.233961015939713,
+    0.173205092549324,
+    0.709999978542328
+   ],
+   "cat": "nature",
+   "cn": "原木",
+   "file": "res://models/nature/log.glb",
+   "id": "nature/log",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    1.0,
+    0.416719436645508,
+    0.54932165145874
+   ],
+   "cat": "nature",
+   "cn": "原木大",
+   "file": "res://models/nature/log_large.glb",
+   "id": "nature/log_large",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.424717128276825,
+    0.346410185098648,
+    0.709999978542328
+   ],
+   "cat": "nature",
+   "cn": "原木 stack",
+   "file": "res://models/nature/log_stack.glb",
+   "id": "nature/log_stack",
+   "min_y": -0.0500000827014446
+  },
+  {
+   "aabb": [
+    0.633960962295532,
+    0.346410244703293,
+    0.709999978542328
+   ],
+   "cat": "nature",
+   "cn": "原木 stack大",
+   "file": "res://models/nature/log_stackLarge.glb",
+   "id": "nature/log_stackLarge",
+   "min_y": -0.0500000827014446
+  },
+  {
+   "aabb": [
+    0.173967212438583,
+    0.202800005674362,
+    0.200879991054535
+   ],
+   "cat": "nature",
+   "cn": "蘑菇红",
+   "file": "res://models/nature/mushroom_red.glb",
+   "id": "nature/mushroom_red",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.269630998373032,
+    0.250488013029099,
+    0.254196584224701
+   ],
+   "cat": "nature",
+   "cn": "蘑菇红 group",
+   "file": "res://models/nature/mushroom_redGroup.glb",
+   "id": "nature/mushroom_redGroup",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.123516723513603,
+    0.250488013029099,
+    0.142624795436859
+   ],
+   "cat": "nature",
+   "cn": "蘑菇红高",
+   "file": "res://models/nature/mushroom_redTall.glb",
+   "id": "nature/mushroom_redTall",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.191363930702209,
+    0.153896361589432,
+    0.220967993140221
+   ],
+   "cat": "nature",
+   "cn": "蘑菇 tan",
+   "file": "res://models/nature/mushroom_tan.glb",
+   "id": "nature/mushroom_tan",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.269630998373032,
+    0.250488013029099,
+    0.254196584224701
+   ],
+   "cat": "nature",
+   "cn": "蘑菇 tan group",
+   "file": "res://models/nature/mushroom_tanGroup.glb",
+   "id": "nature/mushroom_tanGroup",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.123516723513603,
+    0.250488013029099,
+    0.142624795436859
+   ],
+   "cat": "nature",
+   "cn": "蘑菇 tan高",
+   "file": "res://models/nature/mushroom_tanTall.glb",
+   "id": "nature/mushroom_tanTall",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    1.0,
+    0.0500000007450581,
+    0.576612949371338
+   ],
+   "cat": "nature",
+   "cn": "小径石",
+   "file": "res://models/nature/path_stone.glb",
+   "id": "nature/path_stone",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.932374060153961,
+    0.0500000007450581,
+    0.876612961292267
+   ],
+   "cat": "nature",
+   "cn": "小径石 circle",
+   "file": "res://models/nature/path_stoneCircle.glb",
+   "id": "nature/path_stoneCircle",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.738269567489624,
+    0.0500000007450581,
+    0.778372764587402
+   ],
+   "cat": "nature",
+   "cn": "小径石转角",
+   "file": "res://models/nature/path_stoneCorner.glb",
+   "id": "nature/path_stoneCorner",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.618233442306519,
+    0.0500000007450581,
+    0.57100784778595
+   ],
+   "cat": "nature",
+   "cn": "小径石尽头",
+   "file": "res://models/nature/path_stoneEnd.glb",
+   "id": "nature/path_stoneEnd",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    1.0,
+    0.0500000007450581,
+    0.514380872249603
+   ],
+   "cat": "nature",
+   "cn": "小径木",
+   "file": "res://models/nature/path_wood.glb",
+   "id": "nature/path_wood",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.75,
+    0.0500000007450581,
+    0.75
+   ],
+   "cat": "nature",
+   "cn": "小径木转角",
+   "file": "res://models/nature/path_woodCorner.glb",
+   "id": "nature/path_woodCorner",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.614849507808685,
+    0.0500000007450581,
+    0.514380872249603
+   ],
+   "cat": "nature",
+   "cn": "小径木尽头",
+   "file": "res://models/nature/path_woodEnd.glb",
+   "id": "nature/path_woodEnd",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.395999997854233,
+    0.244443580508232,
+    0.395999997854233
+   ],
+   "cat": "nature",
+   "cn": "植物 bush",
+   "file": "res://models/nature/plant_bush.glb",
+   "id": "nature/plant_bush",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.602543711662292,
+    0.360410928726196,
+    0.602543711662292
+   ],
+   "cat": "nature",
+   "cn": "植物 bush detailed",
+   "file": "res://models/nature/plant_bushDetailed.glb",
+   "id": "nature/plant_bushDetailed",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.374309986829758,
+    0.242933019995689,
+    0.335687786340714
+   ],
+   "cat": "nature",
+   "cn": "植物 bush大",
+   "file": "res://models/nature/plant_bushLarge.glb",
+   "id": "nature/plant_bushLarge",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.407690763473511,
+    0.169327542185783,
+    0.470760703086853
+   ],
+   "cat": "nature",
+   "cn": "植物 bush大 triangle",
+   "file": "res://models/nature/plant_bushLargeTriangle.glb",
+   "id": "nature/plant_bushLargeTriangle",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.382977157831192,
+    0.207292497158051,
+    0.33634227514267
+   ],
+   "cat": "nature",
+   "cn": "植物 bush小",
+   "file": "res://models/nature/plant_bushSmall.glb",
+   "id": "nature/plant_bushSmall",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.364432245492935,
+    0.29553696513176,
+    0.4135921895504
+   ],
+   "cat": "nature",
+   "cn": "植物 bush triangle",
+   "file": "res://models/nature/plant_bushTriangle.glb",
+   "id": "nature/plant_bushTriangle",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.277619868516922,
+    0.235079392790794,
+    0.277619868516922
+   ],
+   "cat": "nature",
+   "cn": "植物平板矮",
+   "file": "res://models/nature/plant_flatShort.glb",
+   "id": "nature/plant_flatShort",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.27165561914444,
+    0.284309417009354,
+    0.27165561914444
+   ],
+   "cat": "nature",
+   "cn": "植物平板高",
+   "file": "res://models/nature/plant_flatTall.glb",
+   "id": "nature/plant_flatTall",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.563596427440643,
+    0.200000002980232,
+    0.488088846206665
+   ],
+   "cat": "nature",
+   "cn": "花盆大",
+   "file": "res://models/nature/pot_large.glb",
+   "id": "nature/pot_large",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.323449611663818,
+    0.267999976873398,
+    0.280115574598312
+   ],
+   "cat": "nature",
+   "cn": "花盆小",
+   "file": "res://models/nature/pot_small.glb",
+   "id": "nature/pot_small",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.784906685352325,
+    0.259785979986191,
+    1.01546144485474
+   ],
+   "cat": "nature",
+   "cn": "rock大 A",
+   "file": "res://models/nature/rock_largeA.glb",
+   "id": "nature/rock_largeA",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.360799998044968,
+    0.19123400747776,
+    0.360799998044968
+   ],
+   "cat": "nature",
+   "cn": "rock小 A",
+   "file": "res://models/nature/rock_smallA.glb",
+   "id": "nature/rock_smallA",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.495789736509323,
+    0.0649539902806282,
+    0.429577350616455
+   ],
+   "cat": "nature",
+   "cn": "rock小平板 A",
+   "file": "res://models/nature/rock_smallFlatA.glb",
+   "id": "nature/rock_smallFlatA",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.487734228372574,
+    0.220000013709068,
+    0.489146411418915
+   ],
+   "cat": "nature",
+   "cn": "rock小顶 A",
+   "file": "res://models/nature/rock_smallTopA.glb",
+   "id": "nature/rock_smallTopA",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.983068883419037,
+    0.995925903320313,
+    0.683210790157318
+   ],
+   "cat": "nature",
+   "cn": "rock高 A",
+   "file": "res://models/nature/rock_tallA.glb",
+   "id": "nature/rock_tallA",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.784906685352325,
+    0.259775966405869,
+    1.01546144485474
+   ],
+   "cat": "nature",
+   "cn": "石大 A",
+   "file": "res://models/nature/stone_largeA.glb",
+   "id": "nature/stone_largeA",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.360799998044968,
+    0.191224008798599,
+    0.360799998044968
+   ],
+   "cat": "nature",
+   "cn": "石小 A",
+   "file": "res://models/nature/stone_smallA.glb",
+   "id": "nature/stone_smallA",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.495789736509323,
+    0.0649439916014671,
+    0.429577350616455
+   ],
+   "cat": "nature",
+   "cn": "石小平板 A",
+   "file": "res://models/nature/stone_smallFlatA.glb",
+   "id": "nature/stone_smallFlatA",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.487734228372574,
+    0.220000013709068,
+    0.489146411418915
+   ],
+   "cat": "nature",
+   "cn": "石小顶 A",
+   "file": "res://models/nature/stone_smallTopA.glb",
+   "id": "nature/stone_smallTopA",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.983068883419037,
+    0.995925903320313,
+    0.683210790157318
+   ],
+   "cat": "nature",
+   "cn": "石高 A",
+   "file": "res://models/nature/stone_tallA.glb",
+   "id": "nature/stone_tallA",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.356527000665665,
+    0.26649996638298,
+    0.370999991893768
+   ],
+   "cat": "nature",
+   "cn": "树桩 old",
+   "file": "res://models/nature/stump_old.glb",
+   "id": "nature/stump_old",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.356527000665665,
+    0.666499972343445,
+    0.370999991893768
+   ],
+   "cat": "nature",
+   "cn": "树桩 old高",
+   "file": "res://models/nature/stump_oldTall.glb",
+   "id": "nature/stump_oldTall",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.321295350790024,
+    0.206499993801117,
+    0.370999991893768
+   ],
+   "cat": "nature",
+   "cn": "树桩圆",
+   "file": "res://models/nature/stump_round.glb",
+   "id": "nature/stump_round",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.356527000665665,
+    0.206499993801117,
+    0.370999991893768
+   ],
+   "cat": "nature",
+   "cn": "树桩圆 detailed",
+   "file": "res://models/nature/stump_roundDetailed.glb",
+   "id": "nature/stump_roundDetailed",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.359586834907532,
+    0.300010025501251,
+    0.300000011920929
+   ],
+   "cat": "nature",
+   "cn": "树桩广场",
+   "file": "res://models/nature/stump_square.glb",
+   "id": "nature/stump_square",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.439999967813492,
+    0.200000002980232,
+    0.439999967813492
+   ],
+   "cat": "nature",
+   "cn": "树桩广场 detailed",
+   "file": "res://models/nature/stump_squareDetailed.glb",
+   "id": "nature/stump_squareDetailed",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.639999985694885,
+    0.200000002980232,
+    0.639999985694885
+   ],
+   "cat": "nature",
+   "cn": "树桩广场 detailed宽",
+   "file": "res://models/nature/stump_squareDetailedWide.glb",
+   "id": "nature/stump_squareDetailedWide",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.874927997589111,
+    0.561130821704865,
+    0.636399984359741
+   ],
+   "cat": "nature",
+   "cn": "帐篷 detailed封闭",
+   "file": "res://models/nature/tent_detailedClosed.glb",
+   "id": "nature/tent_detailedClosed",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.874927997589111,
+    0.561130821704865,
+    0.666399955749512
+   ],
+   "cat": "nature",
+   "cn": "帐篷 detailed开放",
+   "file": "res://models/nature/tent_detailedOpen.glb",
+   "id": "nature/tent_detailedOpen",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.547599971294403,
+    0.561130821704865,
+    0.636399984359741
+   ],
+   "cat": "nature",
+   "cn": "帐篷小封闭",
+   "file": "res://models/nature/tent_smallClosed.glb",
+   "id": "nature/tent_smallClosed",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.547599971294403,
+    0.561130821704865,
+    0.666399955749512
+   ],
+   "cat": "nature",
+   "cn": "帐篷小开放",
+   "file": "res://models/nature/tent_smallOpen.glb",
+   "id": "nature/tent_smallOpen",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.600000023841858,
+    1.18500006198883,
+    0.600000023841858
+   ],
+   "cat": "nature",
+   "cn": "树块",
+   "file": "res://models/nature/tree_blocks.glb",
+   "id": "nature/tree_blocks",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.600000023841858,
+    1.18500006198883,
+    0.600000023841858
+   ],
+   "cat": "nature",
+   "cn": "树块深色",
+   "file": "res://models/nature/tree_blocks_dark.glb",
+   "id": "nature/tree_blocks_dark",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.529663681983948,
+    1.43033277988434,
+    0.529663681983948
+   ],
+   "cat": "nature",
+   "cn": "树 cone",
+   "file": "res://models/nature/tree_cone.glb",
+   "id": "nature/tree_cone",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.529663681983948,
+    1.43033277988434,
+    0.529663681983948
+   ],
+   "cat": "nature",
+   "cn": "树 cone深色",
+   "file": "res://models/nature/tree_cone_dark.glb",
+   "id": "nature/tree_cone_dark",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.755000054836273,
+    1.70788741111755,
+    0.653849005699158
+   ],
+   "cat": "nature",
+   "cn": "树标准",
+   "file": "res://models/nature/tree_default.glb",
+   "id": "nature/tree_default",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.755000054836273,
+    1.70788741111755,
+    0.653849005699158
+   ],
+   "cat": "nature",
+   "cn": "树标准深色",
+   "file": "res://models/nature/tree_default_dark.glb",
+   "id": "nature/tree_default_dark",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.847115039825439,
+    1.33241701126099,
+    0.761602520942688
+   ],
+   "cat": "nature",
+   "cn": "树 detailed",
+   "file": "res://models/nature/tree_detailed.glb",
+   "id": "nature/tree_detailed",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.847115039825439,
+    1.33241701126099,
+    0.761602520942688
+   ],
+   "cat": "nature",
+   "cn": "树 detailed深色",
+   "file": "res://models/nature/tree_detailed_dark.glb",
+   "id": "nature/tree_detailed_dark",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.755000054836273,
+    1.15038740634918,
+    0.653849005699158
+   ],
+   "cat": "nature",
+   "cn": "树胖",
+   "file": "res://models/nature/tree_fat.glb",
+   "id": "nature/tree_fat",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.755000054836273,
+    1.15038740634918,
+    0.653849005699158
+   ],
+   "cat": "nature",
+   "cn": "树胖 darkh",
+   "file": "res://models/nature/tree_fat_darkh.glb",
+   "id": "nature/tree_fat_darkh",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.640554010868073,
+    1.22623991966248,
+    0.7396479845047
+   ],
+   "cat": "nature",
+   "cn": "树橡树",
+   "file": "res://models/nature/tree_oak.glb",
+   "id": "nature/tree_oak",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.640554010868073,
+    1.22623991966248,
+    0.7396479845047
+   ],
+   "cat": "nature",
+   "cn": "树橡树深色",
+   "file": "res://models/nature/tree_oak_dark.glb",
+   "id": "nature/tree_oak_dark",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.93548971414566,
+    1.51459062099457,
+    1.01276350021362
+   ],
+   "cat": "nature",
+   "cn": "树棕榈",
+   "file": "res://models/nature/tree_palm.glb",
+   "id": "nature/tree_palm",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.93548971414566,
+    1.37991070747375,
+    1.01276350021362
+   ],
+   "cat": "nature",
+   "cn": "树棕榈弯道",
+   "file": "res://models/nature/tree_palmBend.glb",
+   "id": "nature/tree_palmBend",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    1.46276199817657,
+    1.12403976917267,
+    1.46276199817657
+   ],
+   "cat": "nature",
+   "cn": "树棕榈 detailed矮",
+   "file": "res://models/nature/tree_palmDetailedShort.glb",
+   "id": "nature/tree_palmDetailedShort",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    1.46276199817657,
+    1.42346692085266,
+    1.46276199817657
+   ],
+   "cat": "nature",
+   "cn": "树棕榈 detailed高",
+   "file": "res://models/nature/tree_palmDetailedTall.glb",
+   "id": "nature/tree_palmDetailedTall",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    1.0343291759491,
+    1.05623185634613,
+    1.0343291759491
+   ],
+   "cat": "nature",
+   "cn": "树棕榈矮",
+   "file": "res://models/nature/tree_palmShort.glb",
+   "id": "nature/tree_palmShort",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    1.0343291759491,
+    1.35565900802612,
+    1.0343291759491
+   ],
+   "cat": "nature",
+   "cn": "树棕榈高",
+   "file": "res://models/nature/tree_palmTall.glb",
+   "id": "nature/tree_palmTall",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.531960010528564,
+    1.54583549499512,
+    0.531960010528564
+   ],
+   "cat": "nature",
+   "cn": "树松树标准 A",
+   "file": "res://models/nature/tree_pineDefaultA.glb",
+   "id": "nature/tree_pineDefaultA",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.48038437962532,
+    0.914468586444855,
+    0.554700016975403
+   ],
+   "cat": "nature",
+   "cn": "树松树地块 A",
+   "file": "res://models/nature/tree_pineGroundA.glb",
+   "id": "nature/tree_pineGroundA",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.617018818855286,
+    1.36643719673157,
+    0.712472021579742
+   ],
+   "cat": "nature",
+   "cn": "树松树圆 A",
+   "file": "res://models/nature/tree_pineRoundA.glb",
+   "id": "nature/tree_pineRoundA",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.5,
+    0.967199981212616,
+    0.5
+   ],
+   "cat": "nature",
+   "cn": "树松树小 A",
+   "file": "res://models/nature/tree_pineSmallA.glb",
+   "id": "nature/tree_pineSmallA",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.38627290725708,
+    1.52960598468781,
+    0.391950011253357
+   ],
+   "cat": "nature",
+   "cn": "树松树高 A",
+   "file": "res://models/nature/tree_pineTallA.glb",
+   "id": "nature/tree_pineTallA",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.38627290725708,
+    1.52960598468781,
+    0.391950011253357
+   ],
+   "cat": "nature",
+   "cn": "树松树高 A detailed",
+   "file": "res://models/nature/tree_pineTallA_detailed.glb",
+   "id": "nature/tree_pineTallA_detailed",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.38627290725708,
+    1.93460607528687,
+    0.391950011253357
+   ],
+   "cat": "nature",
+   "cn": "树松树高 B detailed",
+   "file": "res://models/nature/tree_pineTallB_detailed.glb",
+   "id": "nature/tree_pineTallB_detailed",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.480384290218353,
+    1.67049884796143,
+    0.554700016975403
+   ],
+   "cat": "nature",
+   "cn": "树松树高 C detailed",
+   "file": "res://models/nature/tree_pineTallC_detailed.glb",
+   "id": "nature/tree_pineTallC_detailed",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.480384290218353,
+    2.0754988193512,
+    0.554700016975403
+   ],
+   "cat": "nature",
+   "cn": "树松树高 D detailed",
+   "file": "res://models/nature/tree_pineTallD_detailed.glb",
+   "id": "nature/tree_pineTallD_detailed",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.61173951625824,
+    1.24933993816376,
+    0.654900014400482
+   ],
+   "cat": "nature",
+   "cn": "树 plateau",
+   "file": "res://models/nature/tree_plateau.glb",
+   "id": "nature/tree_plateau",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.61173951625824,
+    1.24933993816376,
+    0.654900014400482
+   ],
+   "cat": "nature",
+   "cn": "树 plateau深色",
+   "file": "res://models/nature/tree_plateau_dark.glb",
+   "id": "nature/tree_plateau_dark",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.35463735461235,
+    1.51943683624268,
+    0.409499943256378
+   ],
+   "cat": "nature",
+   "cn": "树简易",
+   "file": "res://models/nature/tree_simple.glb",
+   "id": "nature/tree_simple",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.35463735461235,
+    1.51943683624268,
+    0.409499943256378
+   ],
+   "cat": "nature",
+   "cn": "树简易深色",
+   "file": "res://models/nature/tree_simple_dark.glb",
+   "id": "nature/tree_simple_dark",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.35463735461235,
+    1.11003744602203,
+    0.409499943256378
+   ],
+   "cat": "nature",
+   "cn": "树小",
+   "file": "res://models/nature/tree_small.glb",
+   "id": "nature/tree_small",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.35463735461235,
+    1.11003744602203,
+    0.409499943256378
+   ],
+   "cat": "nature",
+   "cn": "树小深色",
+   "file": "res://models/nature/tree_small_dark.glb",
+   "id": "nature/tree_small_dark",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.399583250284195,
+    1.68771886825562,
+    0.461399018764496
+   ],
+   "cat": "nature",
+   "cn": "树高",
+   "file": "res://models/nature/tree_tall.glb",
+   "id": "nature/tree_tall",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.399583250284195,
+    1.68771886825562,
+    0.461399018764496
+   ],
+   "cat": "nature",
+   "cn": "树高深色",
+   "file": "res://models/nature/tree_tall_dark.glb",
+   "id": "nature/tree_tall_dark",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.680436491966248,
+    1.49029791355133,
+    0.616522550582886
+   ],
+   "cat": "nature",
+   "cn": "树细",
+   "file": "res://models/nature/tree_thin.glb",
+   "id": "nature/tree_thin",
+   "min_y": -0.0500000007450581
+  },
+  {
+   "aabb": [
+    0.680436491966248,
+    1.49029791355133,
+    0.616522550582886
+   ],
+   "cat": "nature",
+   "cn": "树细深色",
+   "file": "res://models/nature/tree_thin_dark.glb",
+   "id": "nature/tree_thin_dark",
+   "min_y": -0.0500000007450581
+  }
+ ]
+}
