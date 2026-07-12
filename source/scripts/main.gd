@@ -99,6 +99,7 @@ var fly_cam: FlyCamera
 var scene_manager: SceneManager
 var timeline: TimelinePanel
 var export_manager: ExportManager
+var novel_agent_runner: NovelAgentRunner
 
 
 var shots: Array[Dictionary] = []
@@ -170,6 +171,12 @@ var tab_light_box: VBoxContainer
 var pose_box: VBoxContainer
 var crowd_dialog: ConfirmationDialog
 var new_dialog: ConfirmationDialog
+var novel_dialog: ConfirmationDialog
+var novel_result_dialog: ConfirmationDialog
+var novel_text: TextEdit
+var novel_count_label: Label
+var novel_result_label: Label
+var _agent_plan: Dictionary = {}
 var _crowd_rows: SpinBox
 var _crowd_cols: SpinBox
 var _crowd_gap: SpinBox
@@ -306,6 +313,7 @@ func _ready() -> void :
 	or OS.get_cmdline_args().has("--write-movie")
 	shots = [_make_shot("段落1")]
 	_load_model_index()
+	novel_agent_runner = NovelAgentRunner.new()
 	_build_world()
 	var user_args: = OS.get_cmdline_user_args()
 	if user_args.has("--previz-build-index"):
@@ -347,7 +355,7 @@ func _ready() -> void :
 
 func _make_shot(shot_name: String) -> Dictionary:
 	return {"name": shot_name, "duration": 8.0, "cam_kf": [], "obj_kf": {}, 
-		"handheld": 0.0}
+		"handheld": 0.0, "env": ""}
 
 
 
@@ -2220,6 +2228,7 @@ func _duplicate_shot() -> void :
 		"name": "段落%d" % (shots.size() + 1), 
 		"duration": float(src.duration), 
 		"handheld": float(src.get("handheld", 0.0)), 
+		"env": String(src.get("env", "")), 
 		"cam_kf": (src.cam_kf as Array).duplicate(true), 
 		"obj_kf": (src.obj_kf as Dictionary).duplicate(true), 
 	})
@@ -2245,6 +2254,13 @@ func _switch_shot(idx: int) -> void :
 
 func _goto_shot(idx: int, keep_playing: bool) -> void :
 	cur_shot = clampi(idx, 0, shots.size() - 1)
+	scene_manager.set_agent_scene_visibility(cur_shot)
+	var shot_env: = String(_shot().get("env", ""))
+	if ENV_PRESETS.has(shot_env) and shot_env != env_preset:
+		env_preset = shot_env
+		_apply_environment()
+		if _azimuth_slider:
+			_sync_env_chips()
 	playhead = 0.0
 	if not keep_playing:
 		playing = false
@@ -2997,6 +3013,7 @@ func _serialize_project() -> Dictionary:
 			"name": s.name, 
 			"duration": float(s.duration), 
 			"handheld": float(s.get("handheld", 0.0)), 
+			"env": String(s.get("env", "")), 
 			"cam_kf": cam_out, 
 			"obj_kf": obj_out, 
 			"wp": _serialize_wp(s.get("wp", [])), 
@@ -3088,6 +3105,7 @@ func _load_project_data(data: Dictionary) -> bool:
 				"name": s.get("name", "段落"), 
 				"duration": float(s.get("duration", 8.0)), 
 				"handheld": float(s.get("handheld", 0.0)), 
+				"env": String(s.get("env", "")), 
 				"cam_kf": _parse_keys(s.get("cam_kf", []), true), 
 				"obj_kf": _parse_obj_tracks(s.get("obj_kf", {})), 
 				"wp": _parse_wp(s.get("wp", [])), 
@@ -3103,11 +3121,15 @@ func _load_project_data(data: Dictionary) -> bool:
 	if shots.is_empty():
 		shots.append(_make_shot("段落1"))
 	cur_shot = 0
+	scene_manager.set_agent_scene_visibility(cur_shot)
 	playhead = 0.0
 	var env_data: Dictionary = data.get("env", {})
 	env_preset = String(env_data.get("preset", "day"))
 	if not ENV_PRESETS.has(env_preset):
 		env_preset = "day"
+	var first_shot_env: = String(_shot().get("env", ""))
+	if ENV_PRESETS.has(first_shot_env):
+		env_preset = first_shot_env
 	sun_azimuth = float(env_data.get("azimuth", 32.0))
 	labels_burn = bool(data.get("labels_burn", false))
 	_apply_environment()
@@ -3442,6 +3464,9 @@ func _build_top_bar(root: Control) -> void :
 	mode_card_shoot.focus_mode = Control.FOCUS_NONE
 	mode_card_shoot.pressed.connect( func() -> void : _set_mode(true))
 	mode_box.add_child(mode_card_shoot)
+	var agent_btn: = _make_button("AI 预演", _open_novel_dialog)
+	agent_btn.tooltip_text = "粘贴 1000-2000 字小说，生成分场、白模和镜头草案"
+	box.add_child(agent_btn)
 
 	var sp1: = Control.new()
 	sp1.size_flags_horizontal = Control.SIZE_EXPAND_FILL
@@ -4590,6 +4615,147 @@ func _set_mode(shoot: bool) -> void :
 		_status("布景模式:右侧「工具/素材库」添加物体,左键拖动摆放")
 
 
+func _open_novel_dialog() -> void :
+	if novel_text:
+		novel_text.text = ""
+		_update_novel_character_count()
+	novel_dialog.popup_centered(Vector2i(760, 560))
+
+
+func _novel_visible_characters(text: String) -> int:
+	return text.replace(" ", "").replace("\n", "").replace("\t", "").length()
+
+
+func _update_novel_character_count() -> void :
+	if not novel_text or not novel_count_label:
+		return
+	var count: = _novel_visible_characters(novel_text.text)
+	novel_count_label.text = "%d / 1000-2000 字" % count
+	novel_count_label.add_theme_color_override("font_color", 
+		Color("4a9c72") if count >= 1000 and count <= 2000 else Color("b86b35"))
+
+
+func _run_novel_agent() -> void :
+	var text: = novel_text.text
+	var count: = _novel_visible_characters(text)
+	if count < 1000 or count > 2000:
+		_status("小说原文需要 1000-2000 字，当前为 %d 字" % count)
+		novel_dialog.popup_centered(Vector2i(760, 560))
+		return
+	_status("AI 正在拆分场景并校验本地资产…")
+	var response: Dictionary = novel_agent_runner.analyze(text)
+	if not bool(response.get("ok", false)):
+		_status(String(response.get("error", "AI 场景分析失败。")))
+		return
+	var result: Dictionary = response.get("result", {})
+	_agent_plan = result.get("plan", {})
+	if _agent_plan.is_empty():
+		_status("AI 没有返回可导入的场景计划。")
+		return
+	_show_agent_plan(result)
+
+
+func _show_agent_plan(result: Dictionary) -> void :
+	var lines: PackedStringArray = ["结构校验已通过。确认后会新建工程并自动建立场景组、段落与相机关键帧。"]
+	for i in range((_agent_plan.get("scenes", []) as Array).size()):
+		var scene: Dictionary = _agent_plan.scenes[i]
+		var camera: Dictionary = scene.get("camera", {})
+		lines.append("%d. %s  ·  %s  ·  %d 个对象" % [
+			i + 1, String(scene.get("title", "场景")), 
+			String(camera.get("preset", "固定机位")), 
+			(scene.get("objects", []) as Array).size(), 
+		])
+	var text_review: Dictionary = (result.get("validation", {}) as Dictionary).get("text", {})
+	if String(text_review.get("status", "")) == "not_configured":
+		lines.append("文本复核未配置远程模型；当前使用本地确定性规则和资产白名单。")
+	novel_result_label.text = "\n".join(lines)
+	novel_result_dialog.popup_centered(Vector2i(720, 420))
+
+
+func _apply_agent_plan() -> void :
+	var scenes: Array = _agent_plan.get("scenes", [])
+	if scenes.is_empty():
+		_status("没有可应用的 AI 场景计划。")
+		return
+	scene_manager.clear_objects()
+	shots.clear()
+	for scene in scenes:
+		var shot: Dictionary = _make_shot(String(scene.get("title", "AI 场景")))
+		shot["env"] = String(scene.get("environment", "day"))
+		shots.append(shot)
+	for index in range(scenes.size()):
+		var scene: Dictionary = scenes[index]
+		var group: Node3D = _build_agent_scene(scene, index)
+		if group:
+			_seed_agent_camera(scene, group, index)
+	cur_shot = 0
+	_set_mode(true)
+	_goto_shot(0, false)
+	scene_manager.select(null)
+	scene_manager.refresh_labels()
+	_refresh_object_list()
+	_after_keys_changed()
+	_status("AI 已建立 %d 个场景段落；切换底部段落即可查看对应白模。" % scenes.size())
+
+
+func _build_agent_scene(scene: Dictionary, scene_index: int) -> Node3D:
+	var members: Array = []
+	var objects: Array = scene.get("objects", [])
+	for object_index in range(objects.size()):
+		var node: Node3D = _spawn_agent_object(objects[object_index], scene_index, object_index)
+		if node:
+			members.append(node)
+	if members.size() < 2:
+		return null
+	scene_manager.select_many(members)
+	var group: Node3D = scene_manager.group_selected()
+	if group:
+		group.name = "AI%02d_%s" % [scene_index + 1, String(scene.get("title", "场景"))]
+		group.set_meta("agent_scene_index", scene_index)
+		group.visible = scene_index == 0
+		scene_manager.refresh_labels()
+	return group
+
+
+func _spawn_agent_object(item: Dictionary, scene_index: int, object_index: int) -> Node3D:
+	var kind: = String(item.get("kind", ""))
+	var node: Node3D = null
+	if kind == "model":
+		var info: Dictionary = model_lookup.get(String(item.get("asset_id", "")), {})
+		if not info.is_empty():
+			node = scene_manager.add_model(info.entry, float(info.cat_scale), Vector3.ZERO)
+	elif kind == "figure":
+		node = scene_manager.add_figure(Vector3.ZERO, String(item.get("figure_type", "standard")), 
+			String(item.get("pose", "站立")))
+	elif kind == "primitive":
+		node = scene_manager.add_primitive(String(item.get("primitive", "box")), Vector3.ZERO)
+	if node == null:
+		return null
+	var placement: Dictionary = item.get("placement", {})
+	node.name = "AI%02d_%02d_%s" % [scene_index + 1, object_index + 1, String(item.get("label", kind))]
+	node.position.x = float(placement.get("x", 0.0))
+	node.position.z = float(placement.get("z", 0.0))
+	node.rotation_degrees.y = float(placement.get("yaw", 0.0))
+	node.scale = node.scale * float(placement.get("scale", 1.0))
+	return node
+
+
+func _seed_agent_camera(scene: Dictionary, group: Node3D, shot_index: int) -> void :
+	var camera: Dictionary = scene.get("camera", {})
+	var duration: = clampf(float(camera.get("duration_seconds", 7.0)), 3.0, 20.0)
+	var fov: = clampf(float(camera.get("fov", 55.0)), 15.0, 100.0)
+	var focus: = group.global_position + Vector3(0, 1.2, 0)
+	var start: = focus + Vector3(8.0, 4.6, 8.0)
+	var keys: Array = _generate_preset_keys(String(camera.get("preset", "static_shot")), {
+		"target": focus, "cur": start, "fov0": fov, "D": duration,
+	})
+	if keys.is_empty():
+		_pk(keys, 0.0, start, focus, fov)
+		_pk(keys, duration, start, focus, fov)
+	shots[shot_index]["duration"] = duration
+	shots[shot_index]["cam_kf"] = keys
+
+
 func _build_dialogs(root: Control) -> void :
 	_save_dialog = _make_file_dialog(FileDialog.FILE_MODE_SAVE_FILE, 
 		PackedStringArray(["*.json ; 预演工程"]), "工程.json", 
@@ -4624,6 +4790,42 @@ func _build_dialogs(root: Control) -> void :
 		PackedStringArray(["*.png ; 图片"]), "画面.png", 
 		func(path: String) -> void : _export_still(path))
 	root.add_child(_still_dialog)
+
+	novel_dialog = ConfirmationDialog.new()
+	novel_dialog.title = "AI 小说预演"
+	novel_dialog.theme = ui_theme
+	novel_dialog.ok_button_text = "生成场景计划"
+	novel_dialog.cancel_button_text = "取消"
+	var novel_box: = VBoxContainer.new()
+	novel_box.add_theme_constant_override("separation", 10)
+	novel_dialog.add_child(novel_box)
+	var novel_hint: = Label.new()
+	novel_hint.text = "粘贴 1000-2000 字小说原文。AI 只会使用本地模型目录和基础体生成可确认的预演计划。"
+	novel_hint.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	novel_hint.custom_minimum_size = Vector2(640, 0)
+	novel_box.add_child(novel_hint)
+	novel_text = TextEdit.new()
+	novel_text.placeholder_text = "在此粘贴小说原文…"
+	novel_text.custom_minimum_size = Vector2(640, 300)
+	novel_text.text_changed.connect(_update_novel_character_count)
+	novel_box.add_child(novel_text)
+	novel_count_label = Label.new()
+	novel_count_label.theme_type_variation = "DimLabel"
+	novel_box.add_child(novel_count_label)
+	novel_dialog.confirmed.connect(_run_novel_agent)
+	root.add_child(novel_dialog)
+
+	novel_result_dialog = ConfirmationDialog.new()
+	novel_result_dialog.title = "AI 场景计划"
+	novel_result_dialog.theme = ui_theme
+	novel_result_dialog.ok_button_text = "应用到新工程"
+	novel_result_dialog.cancel_button_text = "返回编辑"
+	novel_result_label = Label.new()
+	novel_result_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	novel_result_label.custom_minimum_size = Vector2(600, 0)
+	novel_result_dialog.add_child(novel_result_label)
+	novel_result_dialog.confirmed.connect(_apply_agent_plan)
+	root.add_child(novel_result_dialog)
 
 
 	band_rect = Panel.new()
@@ -4753,8 +4955,8 @@ func _build_dialogs(root: Control) -> void :
 	root.add_child(new_dialog)
 
 
-	for d: Window in [rename_dialog, update_dialog, crowd_dialog, 
-			preview_dialog, help_dialog, new_dialog]:
+	for d: Window in [rename_dialog, update_dialog, crowd_dialog, novel_dialog, 
+			novel_result_dialog, preview_dialog, help_dialog, new_dialog]:
 		UITheme.style_dialog(d)
 
 

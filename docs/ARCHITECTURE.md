@@ -12,6 +12,8 @@ flowchart LR
     Main --> Export["export_manager.gd\n视频导出"]
     Main --> Theme["ui_theme.gd\n界面主题"]
     Main --> Overlay["frame_overlay.gd\n画幅辅助线"]
+    Main --> AgentRunner["novel_agent_runner.gd\n本地 Agent 调用"]
+    AgentRunner --> Agent["source/agent\n规划、校验与 MCP"]
     Export --> Godot["Godot\n逐帧渲染"]
     Godot --> FFmpeg["FFmpeg\nMP4 编码"]
 ```
@@ -29,6 +31,8 @@ flowchart LR
 | `export_manager.gd` | 调用本地渲染进程与 FFmpeg 生成 MP4 |
 | `ui_theme.gd` | 字体、颜色、控件和菜单样式 |
 | `frame_overlay.gd` | 拍摄模式的画幅边界与安全区 |
+| `novel_agent_runner.gd` | 调用本地 Python Agent，读取已校验的场景计划 |
+| `source/agent/previz_agent/` | 小说分场、资产白名单、确定性校验、可选模型复核和 stdio MCP 服务 |
 
 ## 数据流
 
@@ -37,6 +41,7 @@ flowchart LR
 3. 相机与物体关键帧按段落保存；播放时按时间插值应用到场景。
 4. 工程保存为用户选择的 JSON 文件，加载时根据模型索引重新创建对象。
 5. 导出视频时，Godot 先生成本地临时 AVI，再由 FFmpeg 编码为 MP4。
+6. AI 预演将小说文本交给本地 Agent；Agent 返回受限 JSON，Godot 只在用户确认后创建场景组、段落、环境和相机关键帧。
 
 ## 资源目录
 

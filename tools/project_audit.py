@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "source"
 
 EXPECTED_COUNTS = {
-    ".gd": 11,
+    ".gd": 12,
     ".glb": 385,
     ".png": 445,
 }
@@ -29,6 +29,7 @@ REQUIRED_FILES = (
     "scripts/fly_camera.gd",
     "scripts/frame_overlay.gd",
     "scripts/main.gd",
+    "scripts/novel_agent_runner.gd",
     "scripts/scene_manager.gd",
     "scripts/timeline_panel.gd",
     "scripts/translate_gizmo.gd",

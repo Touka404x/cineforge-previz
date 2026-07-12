@@ -80,6 +80,12 @@ func set_labels_visible(v: bool) -> void :
 	refresh_labels()
 
 
+func set_agent_scene_visibility(scene_index: int) -> void :
+	for obj in list_objects():
+		if obj.has_meta("agent_scene_index"):
+			obj.visible = int(obj.get_meta("agent_scene_index")) == scene_index
+
+
 
 
 
@@ -529,6 +535,8 @@ func _serialize_node(obj: Node3D) -> Dictionary:
 	}
 	if obj.has_meta("model_id"):
 		d["model_id"] = obj.get_meta("model_id")
+	if obj.has_meta("agent_scene_index"):
+		d["agent_scene_index"] = obj.get_meta("agent_scene_index")
 	if obj.has_meta("figure_type"):
 		d["ftype"] = obj.get_meta("figure_type")
 		d["pose"] = obj.get_meta("figure_pose")
@@ -589,6 +597,8 @@ func _load_entry(d: Dictionary, model_lookup: Dictionary) -> Node3D:
 	obj.rotation_degrees = _arr_v3(d.get("rot", [0, 0, 0]))
 	obj.scale = _arr_v3(d.get("scale", [1, 1, 1]))
 	obj.visible = bool(d.get("visible", true))
+	if d.has("agent_scene_index"):
+		obj.set_meta("agent_scene_index", int(d.agent_scene_index))
 	if d.has("color"):
 		set_color_on(obj, Color.from_string(String(d.color), Color.WHITE))
 	return obj

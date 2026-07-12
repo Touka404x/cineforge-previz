@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cineforge-previz-agent"
+version = "1.0.0"
+description = "Local novel-to-previz planner and dependency-free stdio MCP server"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+previz-agent = "previz_agent.cli:main"

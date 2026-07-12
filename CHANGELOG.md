@@ -4,6 +4,12 @@
 
 ## [Unreleased]
 
+### Added
+
+- 新增本地小说预演 Agent：支持 1000-2000 字原文分场、资产映射、场景组、段落和相机关键帧生成。
+- 新增 dependency-free stdio MCP 服务、只读资产资源、小说规划/验证工具及 MCP 配置示例。
+- 新增确定性、文本和可选图像交叉复核流程，以及 MCP/Agent 使用手册与单元测试。
+
 ### Changed
 
 - 明确本项目是基于 `Work-Fisher/cineforge-previz` 的非官方衍生版本。

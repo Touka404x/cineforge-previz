@@ -27,3 +27,12 @@ source/dist/
 Thumbs.db
 .idea/
 .vscode/
+
+# Local AI Agent inputs, results, virtual environments, and configuration
+source/agent/.venv/
+source/agent/__pycache__/
+source/agent/previz_agent/__pycache__/
+source/agent/tests/__pycache__/
+source/agent/tests_sample.txt
+source/agent/tests_plan.json
+previz_agent.local.json

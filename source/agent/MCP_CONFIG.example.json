@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "cineforge-previz": {
+      "command": "python",
+      "args": [
+        "<repo-root>/source/agent/previz_agent.py",
+        "mcp",
+        "--catalog",
+        "<repo-root>/source/models_index.json"
+      ],
+      "env": {
+        "PREVIZ_LLM_MODE": "heuristic"
+      }
+    }
+  }
+}

@@ -25,6 +25,8 @@
 | 虚拟相机 | 自由飞行、焦距、画幅、透视视图和构图辅助 |
 | 镜头设计 | 预制运镜、相机关键帧、物体关键帧、自动机位点和手持效果 |
 | 时间线 | 多段落编排、轨道、播放头、循环播放和段落连播 |
+| AI 预演 | 输入 1000-2000 字小说，自动拆场、匹配本地资产、建立场景组和相机关键帧 |
+| MCP | 通过本地 stdio MCP 服务提供资产检索、小说规划和计划复核工具 |
 | 输出 | JSON 工程、PNG 静帧和 H.264 MP4 视频 |
 
 ## 获取与启动
@@ -40,6 +42,7 @@
 - Godot Engine `4.7.0`
 - Windows 10 或 Windows 11 x64
 - FFmpeg，仅导出 MP4 时需要
+- Python `3.9+`，仅使用 AI 预演或 MCP 时需要
 
 ```powershell
 git clone https://github.com/Touka404x/cineforge-previz.git
@@ -56,6 +59,8 @@ cd cineforge-previz
 3. 为相机和物体记录关键帧，或在镜头库中预览并套用预制运镜。
 4. 在时间线中检查段落衔接、动作和节奏。
 5. 保存 JSON 工程，导出 PNG 静帧或 MP4 视频。
+
+使用 AI 预演时，点击顶栏“AI 预演”，粘贴 1000-2000 字小说原文。应用先生成并校验计划；确认后才会新建工程，为每个场景创建可见性隔离的场景组、段落和相机关键帧。详细的 Agent、MCP 和图像交叉复核流程见 [MCP 与 Agent 手册](docs/MCP_AGENT_HANDBOOK.md) 与 [小说预演指南](docs/NOVEL_TO_PREVIZ.md)。
 
 常用快捷键：`W/A/S/D` 移动相机，右键拖动转向，`K` 记录相机关键帧，`J` 记录物体关键帧，`Space` 播放或暂停，`Ctrl+S` 保存工程。
 
@@ -75,10 +80,12 @@ cd cineforge-previz
 
 ```text
 source/                 Godot 工程、脚本、模型、缩略图和预览素材
+source/agent/           本地小说预演 Agent、stdio MCP 服务器和单元测试
 docs/                   架构与数据说明
 third_party/            第三方许可证与声明
 NOTICE                  上游署名、衍生说明与品牌边界
 RUN_SOURCE.bat          源码工程启动入口
+RUN_MCP_SERVER.bat      本地 MCP stdio 服务入口
 ```
 
 代码结构和数据流见 [架构文档](docs/ARCHITECTURE.md)，数据处理方式见 [数据与网络说明](docs/PRIVACY_AND_NETWORK.md)。
