@@ -1,0 +1,42 @@
+3D 白模预演
+非官方衍生版本 / Unofficial derivative
+
+UPSTREAM SOURCE AND ATTRIBUTION
+
+This repository is a modified derivative based on CineForge Previz:
+https://github.com/Work-Fisher/cineforge-previz
+
+Upstream work: CineForge Previz · 创剧·白模预演工具
+Copyright 2026 CineForge (https://github.com/Work-Fisher)
+Official product: https://cineforge.workfisher.cn
+
+LICENSE
+
+This derivative is distributed under the Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International license
+(CC BY-NC-SA 4.0). See LICENSE.
+
+You may share and adapt this work for non-commercial purposes only,
+provided that you retain this notice, give appropriate attribution to the
+upstream work, indicate changes, and distribute adaptations under the same
+CC BY-NC-SA 4.0 terms or a compatible license.
+
+MODIFICATION NOTICE
+
+This repository contains a non-official derivative of the upstream source.
+Its project organization, local runtime behavior, packaging, and public
+documentation may differ from the upstream project. Additional modifications
+are attributed to contributors of this repository.
+
+NO ENDORSEMENT OR TRADEMARK LICENSE
+
+This project is not an official CineForge or 创剧 product and is not
+affiliated with, sponsored by, endorsed by, or granted official status by
+the CineForge project or Work-Fisher. "CineForge" and "创剧" are used here
+only to identify the upstream source. No trademark rights are granted for
+promoting this derivative.
+
+THIRD-PARTY COMPONENTS
+
+Godot, FFmpeg, MiSans, models, images, and other third-party components are
+subject to their own terms. See THIRD_PARTY_NOTICES.md.

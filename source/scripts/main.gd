@@ -8,6 +8,7 @@ extends Node3D
 
 
 const APP_VERSION: = "0.9.3"
+const APP_TITLE: = "3D 白模预演"
 
 const CINEFORGE_BASE: = ""
 
@@ -313,7 +314,7 @@ func _ready() -> void :
 	if render_mode:
 		_enter_render_mode()
 		return
-	get_window().title = "CineForge 白模预演 v" + APP_VERSION
+	get_window().title = APP_TITLE + " v" + APP_VERSION
 	_load_settings()
 	_setup_window_scale()
 	_build_ui()
@@ -572,7 +573,7 @@ func _build_login_gate() -> void :
 	card.add_child(box)
 
 	var title: = Label.new()
-	title.text = "CineForge 白模预演"
+	title.text = APP_TITLE
 	title.theme_type_variation = "TitleLabel"
 	title.add_theme_font_size_override("font_size", 22)
 	box.add_child(title)
@@ -3519,7 +3520,7 @@ func _on_help_menu(id: int) -> void :
 		20:
 			help_dialog.popup_centered()
 		22:
-			_status("CineForge 白模预演 v%s" % APP_VERSION)
+			_status("%s v%s" % [APP_TITLE, APP_VERSION])
 
 
 func _on_file_menu(id: int) -> void :

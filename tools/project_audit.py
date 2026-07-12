@@ -36,6 +36,12 @@ REQUIRED_FILES = (
     "scripts/updater.gd",
 )
 
+REQUIRED_LEGAL_FILES = (
+    "LICENSE",
+    "NOTICE",
+    "THIRD_PARTY_NOTICES.md",
+)
+
 NETWORK_RULES = {
     "HTTP request node": re.compile(r"\bHTTPRequest\b"),
     "HTTP client": re.compile(r"\bHTTPClient\b"),
@@ -81,6 +87,18 @@ def main() -> int:
         path = SOURCE / relative
         if not path.is_file() or path.stat().st_size == 0:
             fail(errors, f"missing or empty required file: source/{relative}")
+
+    for relative in REQUIRED_LEGAL_FILES:
+        path = ROOT / relative
+        if not path.is_file() or path.stat().st_size == 0:
+            fail(errors, f"missing or empty required legal file: {relative}")
+
+    license_text = (ROOT / "LICENSE").read_text(encoding="utf-8")
+    notice_text = (ROOT / "NOTICE").read_text(encoding="utf-8")
+    if "Attribution-NonCommercial-ShareAlike 4.0 International" not in license_text:
+        fail(errors, "LICENSE must contain CC BY-NC-SA 4.0")
+    if "Work-Fisher/cineforge-previz" not in notice_text:
+        fail(errors, "NOTICE must retain the upstream source attribution")
 
     source_files = [path for path in SOURCE.rglob("*") if path.is_file()]
     for suffix, expected in EXPECTED_COUNTS.items():

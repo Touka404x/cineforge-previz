@@ -4,7 +4,10 @@
 
 ## [Unreleased]
 
-- 暂无。
+### Changed
+
+- 明确本项目是基于 `Work-Fisher/cineforge-previz` 的非官方衍生版本。
+- 将项目许可证调整为 CC BY-NC-SA 4.0，并新增上游署名与品牌边界说明。
 
 ## [0.9.3] - 2026-07-10
 

@@ -1,8 +1,19 @@
-# CineForge 白模预演
+# 3D 白模预演
 
-CineForge 是一款开源的 Windows 桌面端 3D 预演工具，帮助导演、分镜师、动画师和内容创作者在拍摄或制作前快速搭建场景、设计镜头、检查节奏，并输出可分享的预演画面与视频。
+> **非官方衍生版本**，基于 [CineForge Previz](https://github.com/Work-Fisher/cineforge-previz) 源码二次开发。
+>
+> 本仓库按 **[CC BY-NC-SA 4.0](LICENSE)** 发布：允许在署名、注明改动并以相同协议分享的前提下进行非商业使用、修改和再分发；不允许商业使用。本项目不是 CineForge 或“创剧”的官方产品，也不受其背书或认可。
 
-![CineForge 场景示例](docs/images/preview.png)
+![3D 白模预演场景示例](docs/images/preview.png)
+
+## 上游署名与授权
+
+- **上游项目**：[Work-Fisher/cineforge-previz](https://github.com/Work-Fisher/cineforge-previz)
+- **上游版权**：Copyright 2026 CineForge ([github.com/Work-Fisher](https://github.com/Work-Fisher))
+- **本仓库性质**：基于上游源码的非官方衍生版本；工程组织、运行方式和公开文档可能与上游不同。
+- **品牌说明**：`CineForge` 和“创剧”仅用于说明源码来源与署名，不代表官方关系、赞助或授权。
+
+完整署名、改动说明和品牌边界见 [NOTICE](NOTICE)。第三方组件与素材的独立条款见 [第三方声明](THIRD_PARTY_NOTICES.md)。
 
 ## 它能做什么
 
@@ -20,11 +31,7 @@ CineForge 是一款开源的 Windows 桌面端 3D 预演工具，帮助导演、
 
 ### Windows 运行包
 
-1. 打开 [Releases](../../releases/latest)。
-2. 下载最新的 Windows ZIP 包并完整解压。
-3. 双击 `START.bat` 启动应用。
-
-Windows 可能会因为程序尚未签名而显示 SmartScreen 提示。请只从本仓库的 Release 页面下载文件。
+请使用本仓库随后按当前许可证重新发布的运行包。现有历史运行包已从公开下载中撤下，以便先完成许可证和署名更新。
 
 ### 从源码运行
 
@@ -54,7 +61,9 @@ cd cineforge-previz
 
 ## 分享你的预演
 
-CineForge 是桌面应用，不提供项目上传、网页托管或公开链接功能。完成镜头后，可导出 PNG 或 MP4，再通过你自己的视频平台、网盘或协作工具分享给团队成员。
+本工具是桌面应用，不提供项目上传、网页托管或公开链接功能。完成镜头后，可导出 PNG 或 MP4，再通过你自己的视频平台、网盘或协作工具分享给团队成员。
+
+请注意：分享本工具本身、修改版或其源码时，仍须遵守 `CC BY-NC-SA 4.0` 的署名、非商业和相同方式共享条件。
 
 ## 工程与输出
 
@@ -68,6 +77,7 @@ CineForge 是桌面应用，不提供项目上传、网页托管或公开链接�
 source/                 Godot 工程、脚本、模型、缩略图和预览素材
 docs/                   架构与数据说明
 third_party/            第三方许可证与声明
+NOTICE                  上游署名、衍生说明与品牌边界
 RUN_SOURCE.bat          源码工程启动入口
 ```
 
@@ -81,4 +91,9 @@ RUN_SOURCE.bat          源码工程启动入口
 
 ## 许可证
 
-本项目业务代码按 [GNU GPL v3](LICENSE) 发布。Godot、FFmpeg、字体、模型和图片等组件适用各自的许可条款，详见 [第三方声明](THIRD_PARTY_NOTICES.md)。
+本仓库作为上游项目的衍生版本，整体按 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](LICENSE) 提供：
+
+- 可以非商业地使用、修改和分享。
+- 再分发时必须保留 [NOTICE](NOTICE) 中的上游署名，标明改动，并继续使用 CC BY-NC-SA 4.0 或兼容协议。
+- 不得将 `CineForge` 或“创剧”品牌用于暗示本项目获得官方认可或背书。
+- Godot、FFmpeg、字体和素材等组件适用各自的许可条款，详见 [第三方声明](THIRD_PARTY_NOTICES.md)。
