@@ -1,0 +1,19 @@
+name: Close External Pull Requests
+
+on:
+  pull_request_target:
+    types: [opened, reopened, ready_for_review]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  close:
+    if: github.event.pull_request.user.login != github.repository_owner
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: gh pr close "$PR_NUMBER" --repo "$GITHUB_REPOSITORY"
